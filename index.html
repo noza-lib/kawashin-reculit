@@ -19,6 +19,9 @@
             color: black;
             padding: 1rem;
             text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         nav ul {
@@ -35,6 +38,23 @@
             text-decoration: none;
             color: black;
             font-weight: bold;
+        }
+
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        h2 {
+            font-size: 2.375rem;
+            color: #217AC5;
+        }
+        h3 {
+            font-size: 1.5rem;
+            color: #217AC5;
+        }
+        h4 {
+            font-size: 1.25rem;
         }
 
         .hero {
@@ -55,12 +75,41 @@
             margin-bottom: 3rem;
         }
 
-        .job-card {
+        .section-title{
+            text-align: center;
+            background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
+        }
+
+        .activity-content{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        .activity-item{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 2em;
+            margin-bottom: 1em;
+            border-radius: 15px;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .activity-item h4{
+            text-align: center;
+        }
+
+        .activity-item img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .activity-item p{
+            margin: 0;
         }
 
         .radius-table{
@@ -123,10 +172,10 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="豊川信用金庫ロゴ">
+        <img src="picture/logo.png" alt="豊川信用金庫ロゴ">
         <nav>
             <ul>
-              <li><a href="#approach">取り組み</a></li>
+              <li><a href="#activity">取り組み</a></li>
               <li><a href="#working-style">働き方</a></li>
               <li><a href="#recruitment">募集要項</a></li>
               <li><a href="#contact">お問い合わせ</a></li>
@@ -149,22 +198,24 @@
 
     <div class="content">
         <section class="section">
-            <h1>そばにいる だから 頼りになる</h1>
-            <p>相互扶助の精神に基づき、「誠意」と「創意」と「熱意」で
+            <div class="section-title">
+                <h1>そばにいる だから 頼りになる</h1>
+                <p>相互扶助の精神に基づき、「誠意」と「創意」と「熱意」で
                 地域社会との「信頼」を築き、コミュニティ・バンクのリーダーをめざします。</p>
+            </div>
         </section>
-        <section id="approach" class="section">
+        <section id="activity" class="section">
             <h2>地域活動</h2>
-            <div class="approach-content">
-                <div class="approach-item">
-                    <img src="image.jpg" alt="出前授業（豊川高校）">
-                    <h3>出前授業（豊川高校）</h3>
+            <div class="activity-content">
+                <div class="activity-item">
+                    <img src="picture/jugyou.jpg" alt="出前授業（豊川高校）">
+                    <h4>出前授業（豊川高校）</h4>
                     <p>株式会社中部しんきんカードの小塚さんを講師にむかえ、豊川高校の2年生に向けて成年年齢引下げに伴うクレジット契約についての金融授業を実施しました。
                         生徒たちへ、契約に対する自覚と責任を持つことの大切さ等を伝えました。</p>
                 </div>
-                <div class="approach-item">
-                    <img src="image.jpg" alt="かわしんキッズ・マネースクール">
-                    <h3>かわしんキッズ・マネースクール</h3>
+                <div class="activity-item">
+                    <img src="picture/kidsschool.jpg" alt="かわしんキッズ・マネースクール">
+                    <h4>かわしんキッズ・マネースクール</h4>
                     <p>豊川市・新城市内の小学校6校で"かわしんキッズ・マネースクール"を開催しました。
                         「お金の使い方や大切さ」「紙幣の偽造防止技術」等を説明しました。また、「１億円(模擬紙幣)の大きさや重さ」を体感していただきました。</p>
                 </div>
@@ -175,13 +226,13 @@
             <h3>先輩社員の声</h3>
             <div class="working-style-voice">
                 <div class="working-style-voice-item">
-                    <img src="image.jpg" alt="先輩社員の声1">
+                    <img src="picture/image.jpg" alt="先輩社員の声1">
                     <h4>地域支援部 Aさん</h4>
                     <p>私は地元の企業や個人のお客様と直接関わる中で、地域経済を支えている実感を得ています。お客様からの「ありがとう」の言葉が何よりのやりがいです。
                         日々の業務を通じて信頼関係を築きながら、自分自身も成長できる環境があります。</p>
                 </div>
                 <div class="working-style-voice-item">
-                    <img src="image.jpg" alt="先輩社員の声2">
+                    <img src="picture/image.jpg" alt="先輩社員の声2">
                     <h4>融資部 Bさん</h4>
                     <p>入社当初は金融の知識がほとんどありませんでしたが、先輩や上司が丁寧に指導してくださり、安心して成長できました。
                         社内研修や資格取得のサポートも充実しており、意欲次第でどんどんスキルアップできます。アットホームな雰囲気の中で、のびのびと働けるのが当金庫の魅力です。</p>
