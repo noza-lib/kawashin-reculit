@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>採用情報 | 豊川信用金庫</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .job-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .radius-table{
+            width: 100%;
+            border-radius: 15px;
+            border-spacing: 0;
+            border: none;
+            border-left: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+        }
+        .radius-table tr>*{
+            padding: 15px;
+            border: none;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        .radius-table tr:first-child>*:first-child{
+            border-radius: 15px 0 0 0;
+        }
+        .radius-table tr:first-child>*:last-child{
+            border-radius: 0 15px 0 0;
+        }
+        .radius-table tr:last-child>*:first-child{
+            border-radius: 0 0 0 15px;
+        }
+        .radius-table tr:last-child>*:last-child{
+            border-radius: 0 0 15px 0;
+        }
+
+        th{
+            background-color: #f5f5f5;
+        }
+
+        td{
+            background-color: #fff;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #004C8C;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #003666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="豊川信用金庫ロゴ">
+        <nav>
+            <ul>
+              <li><a href="#approach">取り組み</a></li>
+              <li><a href="#working-style">働き方</a></li>
+              <li><a href="#recruitment">募集要項</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <div class="hero">
+        <div class="video-container" style="position: relative; width: 100%; padding-bottom: 50%;">
+            <iframe 
+                style="position: absolute; left: 50%; transform: translate(-50%, 0%); width: 100%; height: 100%; max-height: 640px;"
+                src="https://www.youtube.com/embed/nsFMzLQ0dT4?si=NMthZk4BSaiS_EOc" 
+                title="豊川信用金庫 採用動画" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="content">
+        <section class="section">
+            <h1>そばにいる だから 頼りになる</h1>
+            <p>相互扶助の精神に基づき、「誠意」と「創意」と「熱意」で
+                地域社会との「信頼」を築き、コミュニティ・バンクのリーダーをめざします。</p>
+        </section>
+        <section id="approach" class="section">
+            <h2>地域活動</h2>
+            <div class="approach-content">
+                <div class="approach-item">
+                    <img src="image.jpg" alt="出前授業（豊川高校）">
+                    <h3>出前授業（豊川高校）</h3>
+                    <p>株式会社中部しんきんカードの小塚さんを講師にむかえ、豊川高校の2年生に向けて成年年齢引下げに伴うクレジット契約についての金融授業を実施しました。
+                        生徒たちへ、契約に対する自覚と責任を持つことの大切さ等を伝えました。</p>
+                </div>
+                <div class="approach-item">
+                    <img src="image.jpg" alt="かわしんキッズ・マネースクール">
+                    <h3>かわしんキッズ・マネースクール</h3>
+                    <p>豊川市・新城市内の小学校6校で"かわしんキッズ・マネースクール"を開催しました。
+                        「お金の使い方や大切さ」「紙幣の偽造防止技術」等を説明しました。また、「１億円(模擬紙幣)の大きさや重さ」を体感していただきました。</p>
+                </div>
+            </div>
+        </section>
+        <section id="working-style" class="section">
+            <h2>働き方</h2>
+            <h3>先輩社員の声</h3>
+            <div class="working-style-voice">
+                <div class="working-style-voice-item">
+                    <img src="image.jpg" alt="先輩社員の声1">
+                    <h4>地域支援部 Aさん</h4>
+                    <p>私は地元の企業や個人のお客様と直接関わる中で、地域経済を支えている実感を得ています。お客様からの「ありがとう」の言葉が何よりのやりがいです。
+                        日々の業務を通じて信頼関係を築きながら、自分自身も成長できる環境があります。</p>
+                </div>
+                <div class="working-style-voice-item">
+                    <img src="image.jpg" alt="先輩社員の声2">
+                    <h4>融資部 Bさん</h4>
+                    <p>入社当初は金融の知識がほとんどありませんでしたが、先輩や上司が丁寧に指導してくださり、安心して成長できました。
+                        社内研修や資格取得のサポートも充実しており、意欲次第でどんどんスキルアップできます。アットホームな雰囲気の中で、のびのびと働けるのが当金庫の魅力です。</p>
+                </div>
+            </div>
+            <h3>各種データ</h3>
+            <div class="working-style-data">
+                <div class="working-style-data-item">
+                    <h4>平均勤続年数</h4>
+                    <p>15.2年</p>
+                </div>
+                <div class="working-style-data-item">
+                    <h4>月平均所定外労働時間</h4>
+                    <p>3時間</p>
+                </div>
+                <div class="working-style-data-item">
+                    <h4>平均有給休暇取得日数</h4>
+                    <p>12日</p>
+                </div>
+                <div class="working-style-data-item">
+                    <h4>前年度の育児休業対象者数・取得者数</h4>
+                    <p>対象者数：21名　取得者数：21名</p>
+                </div>
+                <div class="working-style-data-item">
+                    <h4>前年度の育児休業取得率</h4>
+                    <p>100%</p>
+                </div>
+                <div class="working-style-data-item">
+                    <h4>役員及び管理的地位にある者に占める女性の割合</h4>
+                    <p>10.0%</p>
+                </div>
+            </div>
+            <h3>教育制度</h3>
+            <div class="working-style-education">
+                <div class="working-style-education-item">
+                    <ul>
+                        <li>新入職員研修会</li>
+                        <li>階層別研修会</li>
+                        <li>職能別研修会</li>
+                    </ul>
+                    <p>など世代や職務に合わせた研修を実施しています。</p>
+                    <p>自己啓発支援制度あり</p>
+                </div>
+            </div>
+            <h3>福利厚生</h3>
+            <div class="working-style-welfare">
+                <div class="working-style-welfare-item">
+                    <p>各種社会保険、職員融資制度、提携保養所エクシブ、
+                        奨学金返済資金支援制度、早期資格取得制度、
+                        旧姓使用制度、通信制大学学費支援制度、他</p>
+                </div>
+            </div>
+        </section>
+        <section id="recruitment" class="section">
+            <h2>募集要項</h2>
+            <div class="recruitment-content">
+                <div class="recruitment-item">
+                    <table class="radius-table">
+                        <tr>
+                            <th>初任給</th>
+                            <td>
+                                大学卒：220,000円<br>
+                                短大卒：190,000円<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>諸手当</th>
+                            <td>
+                                通勤手当、渉外手当、資格取得手当、他
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>昇給</th>
+                            <td>年1回（4月）</td>
+                        </tr>
+                        <tr>
+                            <th>賞与</th>
+                            <td>年3回（6月・12月・3月）※3月は、職種および業績により支給</td>
+                        </tr>
+                        <tr>
+                            <th>勤務地</th>
+                            <td>愛知県内（豊川市・豊橋市・蒲郡市・新城市・田原市・岡崎市・北設楽郡東栄町・額田郡幸田町）</td>
+                        </tr>
+                        <tr>
+                            <th>勤務時間</th>
+                            <td>8:45～17:30</td>
+                        </tr>
+                        <tr>
+                            <th>休日休暇</th>
+                            <td>
+                                土曜、日曜、祝日、12月31日～1月3日、年次有給休暇、慶弔休暇、誕生日休暇、介護休暇、ボランティア休暇、他
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>採用フロー</h2>
+            <ol>
+                <li>マイナビよりエントリー</li>
+                <li>会社説明会</li>
+                <li>面接（グループ）</li>
+                <li>適性検査</li>
+                <li>筆記試験</li>
+                <li>面接（個別）</li>
+                <li>グループディスカッション</li>
+                <li>内々定</li>
+            </ol>
+        </section>
+        <section class="section">
+            <h2>よくある質問</h2>
+            <div class="faq-content">
+                <div class="faq-item">
+                    <h3>Q. 採用試験はどのように行われますか？</h3>
+                    <p>A. 筆記試験と面接試験を実施します。</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>金庫概要</h2>
+            <div class="bank-overview">
+                <div class="bank-overview-item">
+                    <h3>設立年月日</h3>
+                    <p>1949年10月1日</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>お問い合わせ</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">送信</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>豊川信用金庫</p>
+                <p>金融機関コード：1557</p>
+                <p>登録金融機関：東海財務局長（登金）第54号</p>
+                <p>愛知県豊川市末広通3丁目34番地1</p>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © Toyokawa Shinkin Bank. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
