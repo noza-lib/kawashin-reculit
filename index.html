@@ -77,7 +77,7 @@
 
         .section-title{
             text-align: center;
-            background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
+            /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
         }
 
         .activity-content{
@@ -111,6 +111,70 @@
         .activity-item p{
             margin: 0;
         }
+
+        .working-style-voice-item{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 1em;
+            gap: 1em;
+            & img {
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+            }
+        }
+
+        .balloon2-left {
+            position: relative;
+            display: inline-block;
+            margin: 1.5em 0 1.5em 15px;
+            padding: 7px 15px;
+            min-width: 300px;
+            /* max-width: 600px; */
+            height: fit-content;
+            color: #555;
+            font-size: 16px;
+            background: #e0edff;
+            /* border: solid 3px #555; */
+            box-sizing: border-box;
+            border-radius: 15px;
+            flex: 1;
+        }
+
+        .balloon2-left:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -24px;
+            margin-top: -12px;
+            border: 12px solid transparent;
+            border-right: 12px solid #e0edff;
+            z-index: 2;
+        }
+
+        .balloon2-left:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            margin-top: -14px;
+            border: 15px solid transparent;
+            border-right: 15px solid #e0edff;
+            z-index: 1;
+        }
+
+        /* .balloon2-left p {
+            margin: 0;
+            padding: 0;
+        } */
+
+        .working-style-voice-item-name{
+            text-align: right;
+            margin-top: 1em;
+        }
+
 
         .radius-table{
             width: 100%;
@@ -227,15 +291,19 @@
             <div class="working-style-voice">
                 <div class="working-style-voice-item">
                     <img src="picture/image.jpg" alt="先輩社員の声1">
-                    <h4>地域支援部 Aさん</h4>
-                    <p>私は地元の企業や個人のお客様と直接関わる中で、地域経済を支えている実感を得ています。お客様からの「ありがとう」の言葉が何よりのやりがいです。
-                        日々の業務を通じて信頼関係を築きながら、自分自身も成長できる環境があります。</p>
+                    <div class="balloon2-left">
+                        <p>私は地元の企業や個人のお客様と直接関わる中で、地域経済を支えている実感を得ています。お客様からの「ありがとう」の言葉が何よりのやりがいです。
+                            日々の業務を通じて信頼関係を築きながら、自分自身も成長できる環境があります。</p>
+                        <p class="working-style-voice-item-name">地域支援部 Aさん</p>
+                    </div>
                 </div>
                 <div class="working-style-voice-item">
                     <img src="picture/image.jpg" alt="先輩社員の声2">
-                    <h4>融資部 Bさん</h4>
-                    <p>入社当初は金融の知識がほとんどありませんでしたが、先輩や上司が丁寧に指導してくださり、安心して成長できました。
-                        社内研修や資格取得のサポートも充実しており、意欲次第でどんどんスキルアップできます。アットホームな雰囲気の中で、のびのびと働けるのが当金庫の魅力です。</p>
+                    <div class="balloon2-left">
+                        <p>入社当初は金融の知識がほとんどありませんでしたが、先輩や上司が丁寧に指導してくださり、安心して成長できました。
+                            社内研修や資格取得のサポートも充実しており、意欲次第でどんどんスキルアップできます。アットホームな雰囲気の中で、のびのびと働けるのが当金庫の魅力です。</p>
+                        <p class="working-style-voice-item-name">融資部 Bさん</p>
+                    </div>
                 </div>
             </div>
             <h3>各種データ</h3>
