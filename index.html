@@ -4,235 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>採用情報 | 豊川信用金庫</title>
-    <style>
-        body {
-            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-            font-size: 1rem;
-        }
-
-        header {
-            background-color: white;
-            color: black;
-            padding: 1rem;
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-        
-        nav li {
-            margin: 0 20px;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-        }
-
-        h1{
-            font-size: 40px;
-            font-weight: bold;
-            margin-bottom: 1em;
-        }
-        h2 {
-            font-size: 2.375rem;
-            color: #217AC5;
-        }
-        h3 {
-            font-size: 1.5rem;
-            color: #217AC5;
-        }
-        h4 {
-            font-size: 1.25rem;
-        }
-
-        .hero {
-            background-color: white;
-            background-size: cover;
-            background-position: center;
-            color: black;
-            text-align: center;
-        }
-
-        .content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .section {
-            margin-bottom: 3rem;
-        }
-
-        .section-title{
-            text-align: center;
-            /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
-        }
-
-        .activity-content{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1em;
-        }
-
-        .activity-item{
-            display: flex;
-            flex-direction: column;
-            width: 300px;
-            padding: 2em;
-            margin-bottom: 1em;
-            border-radius: 15px;
-            border: 1px solid #ddd;
-        }
-
-        .activity-item h4{
-            text-align: center;
-        }
-
-        .activity-item img{
-            width: 100%;
-            object-fit: cover;
-            border-radius: 15px;
-        }
-
-        .activity-item p{
-            margin: 0;
-        }
-
-        .working-style-voice-item{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
-            padding: 1em;
-            gap: 1em;
-            & img {
-                width: 100%;
-                max-width: 200px;
-                height: auto;
-            }
-        }
-
-        .balloon2-left {
-            position: relative;
-            display: inline-block;
-            margin: 1.5em 0 1.5em 15px;
-            padding: 7px 15px;
-            min-width: 300px;
-            /* max-width: 600px; */
-            height: fit-content;
-            color: #555;
-            font-size: 16px;
-            background: #e0edff;
-            /* border: solid 3px #555; */
-            box-sizing: border-box;
-            border-radius: 15px;
-            flex: 1;
-        }
-
-        .balloon2-left:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: -24px;
-            margin-top: -12px;
-            border: 12px solid transparent;
-            border-right: 12px solid #e0edff;
-            z-index: 2;
-        }
-
-        .balloon2-left:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: -30px;
-            margin-top: -14px;
-            border: 15px solid transparent;
-            border-right: 15px solid #e0edff;
-            z-index: 1;
-        }
-
-        /* .balloon2-left p {
-            margin: 0;
-            padding: 0;
-        } */
-
-        .working-style-voice-item-name{
-            text-align: right;
-            margin-top: 1em;
-        }
-
-
-        .radius-table{
-            width: 100%;
-            border-radius: 15px;
-            border-spacing: 0;
-            border: none;
-            border-left: 1px solid #ddd;
-            border-top: 1px solid #ddd;
-        }
-        .radius-table tr>*{
-            padding: 15px;
-            border: none;
-            border-right: 1px solid #ddd;
-            border-bottom: 1px solid #ddd;
-        }
-        .radius-table tr:first-child>*:first-child{
-            border-radius: 15px 0 0 0;
-        }
-        .radius-table tr:first-child>*:last-child{
-            border-radius: 0 15px 0 0;
-        }
-        .radius-table tr:last-child>*:first-child{
-            border-radius: 0 0 0 15px;
-        }
-        .radius-table tr:last-child>*:last-child{
-            border-radius: 0 0 15px 0;
-        }
-
-        th{
-            background-color: #f5f5f5;
-        }
-
-        td{
-            background-color: #fff;
-        }
-        
-        .button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background-color: #004C8C;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #003666;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -286,9 +58,10 @@
             </div>
         </section>
         <section id="working-style" class="section">
-            <h2>働き方</h2>
-            <h3>先輩社員の声</h3>
-            <div class="working-style-voice">
+            <div class="working-style-content">
+                <h2>働き方</h2>
+                <h3>先輩社員の声</h3>
+                <div class="working-style-voice">
                 <div class="working-style-voice-item">
                     <img src="picture/image.jpg" alt="先輩社員の声1">
                     <div class="balloon2-left">
@@ -305,52 +78,80 @@
                         <p class="working-style-voice-item-name">融資部 Bさん</p>
                     </div>
                 </div>
-            </div>
-            <h3>各種データ</h3>
-            <div class="working-style-data">
-                <div class="working-style-data-item">
-                    <h4>平均勤続年数</h4>
-                    <p>15.2年</p>
+                <h3>各種データ</h3>
+                <div class="working-style-data">
+                    <div class="working-style-data-item">
+                        <table class="radius-table">
+                            <tr>
+                                <th>平均勤続年数</th> 
+                            </tr>
+                            <tr>
+                                <td>15.2年</td>
+                            </tr>
+                        </table>
+                        <table class="radius-table">
+                            <tr>
+                                <th>月平均所定外労働時間</th> 
+                            </tr>
+                            <tr>
+                                <td>3時間</td>
+                            </tr>
+                        </table>
+                        <table class="radius-table">
+                            <tr>
+                                <th>平均有給休暇取得日数</th> 
+                            </tr>
+                            <tr>
+                                <td>12日</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="working-style-data-item">
+                        <table class="radius-table">
+                            <tr>
+                                <th>前年度の育児休業<br>対象者数・取得者数</th> 
+                            </tr>
+                            <tr>
+                                <td>対象者数：21名<br>取得者数：21名</td>
+                            </tr>
+                        </table>
+                        <table class="radius-table">
+                            <tr>
+                                <th>前年度の育児休業取得率</th> 
+                            </tr>
+                            <tr>
+                                <td>100%</td>
+                            </tr>
+                        </table>
+                        <table class="radius-table">
+                            <tr>
+                                <th>役員及び管理的地位にある者に占める女性の割合</th> 
+                            </tr>
+                            <tr>
+                                <td>10.0%</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="working-style-data-item">
-                    <h4>月平均所定外労働時間</h4>
-                    <p>3時間</p>
+                <h3>教育制度</h3>
+                <div class="working-style-education">
+                    <div class="working-style-education-item">
+                        <ul>
+                            <li>新入職員研修会</li>
+                            <li>階層別研修会</li>
+                            <li>職能別研修会</li>
+                        </ul>
+                        <p>など世代や職務に合わせた研修を実施しています。</p>
+                        <p>自己啓発支援制度あり</p>
+                    </div>
                 </div>
-                <div class="working-style-data-item">
-                    <h4>平均有給休暇取得日数</h4>
-                    <p>12日</p>
-                </div>
-                <div class="working-style-data-item">
-                    <h4>前年度の育児休業対象者数・取得者数</h4>
-                    <p>対象者数：21名　取得者数：21名</p>
-                </div>
-                <div class="working-style-data-item">
-                    <h4>前年度の育児休業取得率</h4>
-                    <p>100%</p>
-                </div>
-                <div class="working-style-data-item">
-                    <h4>役員及び管理的地位にある者に占める女性の割合</h4>
-                    <p>10.0%</p>
-                </div>
-            </div>
-            <h3>教育制度</h3>
-            <div class="working-style-education">
-                <div class="working-style-education-item">
-                    <ul>
-                        <li>新入職員研修会</li>
-                        <li>階層別研修会</li>
-                        <li>職能別研修会</li>
-                    </ul>
-                    <p>など世代や職務に合わせた研修を実施しています。</p>
-                    <p>自己啓発支援制度あり</p>
-                </div>
-            </div>
-            <h3>福利厚生</h3>
-            <div class="working-style-welfare">
-                <div class="working-style-welfare-item">
-                    <p>各種社会保険、職員融資制度、提携保養所エクシブ、
-                        奨学金返済資金支援制度、早期資格取得制度、
-                        旧姓使用制度、通信制大学学費支援制度、他</p>
+                <h3>福利厚生</h3>
+                <div class="working-style-welfare">
+                    <div class="working-style-welfare-item">
+                        <p>各種社会保険、職員融資制度、提携保養所エクシブ、
+                            奨学金返済資金支援制度、早期資格取得制度、
+                            旧姓使用制度、通信制大学学費支援制度、他</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -400,7 +201,17 @@
         </section>
         <section class="section">
             <h2>採用フロー</h2>
-            <ol>
+            <div class="recruitment-flow">
+                <p class="recruitment-flow-item">1. マイナビよりエントリー</p>
+                <p class="recruitment-flow-item">2. 会社説明会</p>
+                <p class="recruitment-flow-item">3. 面接（グループ）</p>
+                <p class="recruitment-flow-item">4. 適性検査</p>
+                <p class="recruitment-flow-item">5. 筆記試験</p>
+                <p class="recruitment-flow-item">6. 面接（個別）</p>
+                <p class="recruitment-flow-item">7. グループディスカッション</p>
+                <p class="recruitment-flow-item">8. 内々定</p>
+            </div>
+            <!-- <ol>
                 <li>マイナビよりエントリー</li>
                 <li>会社説明会</li>
                 <li>面接（グループ）</li>
@@ -409,7 +220,7 @@
                 <li>面接（個別）</li>
                 <li>グループディスカッション</li>
                 <li>内々定</li>
-            </ol>
+            </ol> -->
         </section>
         <section class="section">
             <h2>よくある質問</h2>
@@ -424,45 +235,58 @@
             <h2>金庫概要</h2>
             <div class="bank-overview">
                 <div class="bank-overview-item">
-                    <h3>設立年月日</h3>
-                    <p>1949年10月1日</p>
+                    <table class="radius-table">
+                        <tr>
+                            <th>創業</th>
+                            <td>1937年（昭和12年）11月</td>
+                        </tr>
+                        <tr>
+                            <th>本店</th>
+                            <td>豊川市末広通3丁目34番地1</td>
+                        </tr>
+                        <tr>
+                            <th>預金</th>
+                            <td>8,783億円</td>
+                        </tr>
+                        <tr>
+                            <th>貸出金</th>
+                            <td>4,075億円</td>
+                        </tr>
+                        <tr>
+                            <th>出資金</th>
+                            <td>1,411百万円</td>
+                        </tr>
+                        <tr>
+                            <th>会員数</th>
+                            <td>37,347人</td>
+                        </tr>
+                        <tr>
+                            <th>店舗数</th>
+                            <td>36店舗（本店1、支店33、出張所2）</td>
+                        </tr>
+                        <tr>
+                            <th>役職員数</th>
+                            <td>549名（役員12名、職員537名）</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
         <section class="section">
             <h2>お問い合わせ</h2>
             <div class="contact-form">
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">お名前</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">メールアドレス</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">お問い合わせ内容</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit">送信</button>
-                </form>
+                <p></p>豊川信用金庫　人事部</p>
+                <p>フリーダイヤル0120-09-2317</p>
+                <p>担当：人事部（渡辺、大西）</p>
             </div>
         </section>
-
     </div>
+    <hr>
 
     <footer>
         <div class="footer-container">
-            <div class="footer-info">
-                <p>豊川信用金庫</p>
-                <p>金融機関コード：1557</p>
-                <p>登録金融機関：東海財務局長（登金）第54号</p>
-                <p>愛知県豊川市末広通3丁目34番地1</p>
-            </div>
-            <div class="footer-copyright">
-                <p>Copyright © Toyokawa Shinkin Bank. All rights reserved.</p>
-            </div>
+            <p class="footer-info"><span class="footer-info-title">豊川信用金庫</span> 金融機関コード：1557<br>登録金融機関：東海財務局長（登金）第54号<br>愛知県豊川市末広通3丁目34番地1</p>
+            <p class="footer-copyright">Copyright © Toyokawa Shinkin Bank. All rights reserved.</p>
         </div>
     </footer>
 </body>
