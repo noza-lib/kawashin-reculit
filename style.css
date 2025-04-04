@@ -5,23 +5,27 @@ body {
     color: #333;
     line-height: 1.6;
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
 
 header {
     background-color: white;
     color: black;
-    padding: 1rem;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    height: 100px;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 nav li {
@@ -50,6 +54,51 @@ h3 {
 h4 {
     font-size: 1.25rem;
 }
+p{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+th{
+    background-color: #f5f5f5;
+    width: 20%;
+}
+
+td{
+    background-color: #fff;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.header-logo-container{
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+.header-nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-nav a{
+    padding: 1rem 0;
+    display: inline-block;
+}
+
+.header-nav a:hover{
+    color: #217AC5;
+    transition: color 0.3s ease;
+}
 
 .hero {
     background-color: white;
@@ -57,6 +106,7 @@ h4 {
     background-position: center;
     color: black;
     text-align: center;
+    margin-top: 100px;
 }
 
 .content {
@@ -236,15 +286,6 @@ h4 {
     border-radius: 0 0 15px 0;
 }
 
-th{
-    background-color: #f5f5f5;
-    width: 20%;
-}
-
-td{
-    background-color: #fff;
-}
-
 .recruitment-flow{ 
     display: flex;
     flex-direction: row;
@@ -312,4 +353,57 @@ td{
     /* margin-top: 1em; */
     /* text-align: right; */
     /* width: 50%; */
+}
+
+/* トップに戻るボタンのスタイル */
+#to-top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #217AC5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* 初期状態では非表示 */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+#to-top-button:hover {
+    opacity: 1;
+}
+
+/* 新着情報一覧ボタンのスタイル */
+.button-blue {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 200px; */
+    padding: 10px 20px;
+    background-color: white;
+    color: #217AC5;
+    border: 2px solid #217AC5;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 外部リンクアイコンのスタイル */
+.button-blue::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f35d';
+    margin-left: 1em;
+    /* font-size: 1.2em; */
+    transition: transform 0.3s;
+}
+
+.button-blue:hover {
+    background-color: #217AC5;
+    color: white;
 }
