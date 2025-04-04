@@ -15,6 +15,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 nav ul {
@@ -179,13 +180,34 @@ h4 {
 .working-style-data-item{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
     justify-content: center;
     text-align: center;
     gap: 1em;
     margin-bottom: 1em;
 }
 
+.radius-table1c{
+    width: 300px;
+    border-radius: 15px;
+    border-spacing: 0;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.radius-table1c tr>*{
+    padding: 15px;
+    border: none;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.radius-table1c tr:first-child>*:first-child{
+    border-radius: 15px 15px 0 0;
+}
+.radius-table1c tr:last-child>*:last-child{
+    border-radius: 0 0 15px 15px;
+}
 
 .radius-table{
     width: 100%;
@@ -269,7 +291,8 @@ td{
     max-width: 1200px;
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    padding: 20px 0;
+    padding: 20px 2rem;
+    margin: 0 auto;
     gap: 1em;
 }
 
