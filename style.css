@@ -1,3 +1,5 @@
+
+/* --------------------tag定義-------------------- */
 body {
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     margin: 0 auto;
@@ -69,7 +71,7 @@ td{
     background-color: #fff;
 }
 
-/* ボタンのスタイル */
+/* --------------------ボタンのスタイル-------------------- */
 .button-blue, .button-red {
     display: inline-flex;
     align-items: center;
@@ -97,7 +99,7 @@ td{
 /* 外部リンクアイコンのスタイル */
 .button-blue.outside-link::after,
 .button-red.outside-link::after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 6 Free";
     content: '\f35d';
     /* margin-left: 0em; */
     /* font-size: 1.2em; */
@@ -114,6 +116,19 @@ td{
     color: white;
 }
 
+.text-link{
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px dotted #666666;
+    color: #666666;
+}
+
+.text-link:hover{
+    border-bottom: 1px solid #666666;
+    color: #000000;
+}
+
+/* --------------------ヘッダー-------------------- */
 .header-container{
     display: flex;
     flex-direction: row;
@@ -150,6 +165,7 @@ td{
     transition: color 0.3s ease;
 }
 
+/* --------------------メインビジュアル-------------------- */
 .hero {
     background-color: white;
     background-size: cover;
@@ -159,14 +175,15 @@ td{
     margin-top: 100px;
 }
 
+/* --------------------コンテンツ-------------------- */
 .content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .section {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .section-title{
@@ -174,22 +191,55 @@ td{
     /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
 }
 
+/* --------------------地域活動-------------------- */
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+      to {
+      transform: translateX(-100%);
+    }
+}
+.scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: stretch;
+}
+.scroll-infinity__list--left {
+    animation: infinity-scroll-left 40s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+    width: calc(100vw / 3);
+    min-width: 300px;
+}
+.scroll-infinity__item>div {
+    margin: 0.5em;
+}
+
+
 .activity-content{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 1em;
 }
 
 .activity-item{
     display: flex;
     flex-direction: column;
-    width: 300px;
     padding: 2em;
     margin-bottom: 1em;
     border-radius: 15px;
     border: 1px solid #ddd;
+
+    & h4{
+        margin-bottom: 0;
+    }
 }
 
 .activity-item h4{
@@ -219,13 +269,13 @@ td{
     }
 }
 
-/* .working-style-content{
+.working-style-content{
     margin: 0 calc(50% - 50vw);
     padding: 2rem calc(50vw - 50%);
-    width: 100vw;
     background-color: #e0edff;
-} */
+}
 
+/* --------------------働き方-------------------- */
 .working-style-voice-item{
     display: flex;
     flex-direction: row;
@@ -251,7 +301,7 @@ td{
     height: fit-content;
     color: #555;
     font-size: 16px;
-    background: #e0edff;
+    background: #ffffff;
     /* border: solid 3px #555; */
     box-sizing: border-box;
     border-radius: 15px;
@@ -265,7 +315,7 @@ td{
     left: -24px;
     margin-top: -12px;
     border: 12px solid transparent;
-    border-right: 12px solid #e0edff;
+    border-right: 12px solid #ffffff;
     z-index: 2;
 }
 
@@ -279,11 +329,6 @@ td{
     border-right: 15px solid #e0edff;
     z-index: 1;
 }
-
-/* .balloon2-left p {
-    margin: 0;
-    padding: 0;
-} */
 
 .working-style-voice-item-name{
     text-align: right;
@@ -299,8 +344,14 @@ td{
     text-align: center;
     gap: 1em;
     margin-bottom: 1em;
+
+    & img{
+        width: 100px;
+        height: auto;
+    }
 }
 
+/* --------------------表-------------------- */
 .radius-table1c{
     width: 300px;
     border-radius: 15px;
@@ -349,6 +400,7 @@ td{
     border-radius: 0 0 15px 0;
 }
 
+/* --------------------採用フロー-------------------- */
 .recruitment-flow{ 
     display: flex;
     flex-direction: column;
@@ -392,21 +444,35 @@ td{
     z-index: 100;
 }
 
-
-
-/* .recruitment-flow-item{
-    background-color: #217AC5;
+/* --------------------お問い合わせ-------------------- */
+.section#contact{
+    margin: 0 calc(50% - 50vw);
+    padding: 2rem calc(50vw - 50%);
+    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
     color: white;
-    padding: 1em;
-    border-radius: 15px;
-    width: 80%;
-    min-width: 300px;
     text-align: center;
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding: 1em;
-} */
+    & h2{
+        color: white;
+        margin-top: 0;
+    }
+}
 
+.contact-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 2.375rem;
+}
+
+.contact-tel::before {
+    font-family: "Font Awesome 6 Free";
+    content: '\f2a0';
+    font-weight: 900;
+}
+
+
+/* --------------------フッター-------------------- */
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -439,7 +505,7 @@ td{
     /* width: 50%; */
 }
 
-/* トップに戻るボタンのスタイル */
+/* --------------------トップに戻るボタン-------------------- */
 #to-top-button {
     position: fixed;
     bottom: 30px;
