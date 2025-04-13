@@ -48,7 +48,10 @@ h1{
 h2 {
     font-size: 2.375rem;
     color: #217AC5;
+    text-align: center;
 }
+
+
 h3 {
     font-size: 1.5rem;
     color: #217AC5;
@@ -69,6 +72,49 @@ th{
 
 td{
     background-color: #fff;
+}
+
+.section-title{
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before{
+    content: '';
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-color: #217AC5;
+    position: absolute;
+    top: calc(50% - 1.1875rem);
+    left: -4rem;
+}
+
+.section-title::after{
+    content: '';
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-color: #D32F2F;
+    position: absolute;
+    top: calc(50% - 1.1875rem);
+    right: -4rem;
+}
+
+.title3{
+    padding-left: 1em;
+    position: relative;
+}
+
+.title3::before{
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 1em;
+    background-color: #D32F2F;
+    position: absolute;
+    top: calc(50% - 0.5em);
+    left: 0;
 }
 
 /* --------------------ボタンのスタイル-------------------- */
@@ -186,7 +232,7 @@ td{
     margin-bottom: 5rem;
 }
 
-.section-title{
+.message{
     text-align: center;
     /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
 }
