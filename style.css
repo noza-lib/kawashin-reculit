@@ -10,36 +10,6 @@ body {
     scroll-behavior: smooth;
 }
 
-header {
-    background-color: white;
-    color: black;
-    height: 100px;
-    padding: 0 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-nav li {
-    margin: 0 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
 h1{
     font-size: 40px;
     font-weight: bold;
@@ -172,43 +142,6 @@ td{
 .text-link:hover{
     border-bottom: 1px solid #666666;
     color: #000000;
-}
-
-/* --------------------ヘッダー-------------------- */
-.header-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
-    height: 100%;
-}
-
-.header-logo-container{
-    font-size: 0.75rem;
-    text-align: left;
-}
-
-.header-nav-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    & p{
-        width: 7em;
-        text-align: center;
-    }
-}
-
-.header-nav a{
-    padding: 1rem 0;
-    display: inline-block;
-}
-
-.header-nav a:hover{
-    color: #217AC5;
-    transition: color 0.3s ease;
 }
 
 /* --------------------メインビジュアル-------------------- */
@@ -646,4 +579,296 @@ td{
 
 #to-top-button:hover {
     opacity: 1;
+}
+
+/* --------------------レスポンシブ対応-------------------- */
+
+/* 画像のレスポンシブ対応 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* テーブルの横スクロール対応 */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* タブレット対応 (768px以下) */
+@media screen and (max-width: 768px) {
+
+    /* メインビジュアル */
+    .hero {
+        margin-top: 80px;
+    }
+
+    /* コンテンツ */
+    .content {
+        padding: 0 1rem;
+    }
+
+    /* タイトル */
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* セクションタイトル */
+    .section-title::before,
+    .section-title::after {
+        width: 1.8rem;
+        height: 1.8rem;
+        top: calc(50% - 0.9rem);
+    }
+
+    .section-title::before {
+        left: -3rem;
+    }
+
+    .section-title::after {
+        right: -3rem;
+    }
+
+    /* 地域活動 */
+    .scroll-infinity__item {
+        width: calc(100vw / 2);
+        min-width: 250px;
+    }
+
+    .activity-content {
+        flex-direction: column;
+    }
+
+    .activity-item {
+        padding: 1.5em;
+    }
+
+    /* 業務内容 */
+    .business-content-item-left,
+    .business-content-item-right {
+        flex-direction: column;
+        gap: 1em;
+        text-align: center;
+    }
+
+    .business-content-item-left img,
+    .business-content-item-right img {
+        max-width: 100%;
+        min-width: auto;
+        margin: 0;
+    }
+
+    .business-content-item-text {
+        max-width: 100%;
+    }
+
+    /* 働き方 */
+    .working-style-voice-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .balloon2-left {
+        min-width: 250px;
+        margin: 1em 0;
+    }
+
+    .balloon2-left:before,
+    .balloon2-left:after {
+        display: none;
+    }
+
+    .working-style-data-item {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .working-style-data-item-content {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    /* ボタン */
+    .button-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .button-container p {
+        width: 100%;
+    }
+
+    /* フッター */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    /* お問い合わせ */
+    .contact-tel {
+        font-size: 1.8rem;
+    }
+
+    /* トップに戻るボタン */
+    #to-top-button {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+/* スマホ対応 (480px以下) */
+@media screen and (max-width: 480px) {
+
+    /* メインビジュアル */
+    .hero {
+        margin-top: 70px;
+    }
+
+    /* コンテンツ */
+    .content {
+        padding: 0 0.5rem;
+    }
+
+    /* タイトル */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* セクションタイトル */
+    .section-title::before,
+    .section-title::after {
+        width: 1.5rem;
+        height: 1.5rem;
+        top: calc(50% - 0.75rem);
+    }
+
+    .section-title::before {
+        left: -2.5rem;
+    }
+
+    .section-title::after {
+        right: -2.5rem;
+    }
+
+    /* 地域活動 */
+    .scroll-infinity__item {
+        width: 100vw;
+        min-width: 200px;
+    }
+
+    .activity-item {
+        padding: 1em;
+    }
+
+    /* 業務内容 */
+    .business-content-item-left,
+    .business-content-item-right {
+        margin-bottom: 1.5em;
+    }
+
+    /* 働き方 */
+    .balloon2-left {
+        min-width: 200px;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .working-style-data-item-content p {
+        font-size: 1.2rem;
+    }
+
+    /* ボタン */
+    .button-blue, .button-red {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* 表 */
+    .radius-table1c {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .radius-table {
+        font-size: 0.9rem;
+    }
+
+    .radius-table1c tr>*,
+    .radius-table tr>* {
+        padding: 10px 8px;
+    }
+
+    /* 採用フロー */
+    .recruitment-flow p {
+        width: 6em;
+        font-size: 0.9rem;
+    }
+
+    .triangle-bottom {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+
+    /* お問い合わせ */
+    .contact-tel {
+        font-size: 1.5rem;
+    }
+
+    /* フッター */
+    .footer-container {
+        padding: 15px 0.5rem;
+    }
+
+    .footer-info,
+    .footer-copyright {
+        font-size: 0.7rem;
+    }
+
+    /* トップに戻るボタン */
+    #to-top-button {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* タッチ操作の改善 */
+@media (hover: none) and (pointer: coarse) {
+    .button-blue, .button-red {
+        min-height: 44px; /* タッチターゲットの最小サイズ */
+    }
+    
+    .header-nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hamburger-menu {
+        min-height: 44px;
+        min-width: 44px;
+    }
 }

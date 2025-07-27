@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>採用情報 | 豊川信用金庫</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
 </head>
 <body>
     <header>
         <div class="header-container">
+            <!-- <button class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </button> -->
+            <div class="drawer_toggle" id="drawer-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="header-logo-container">
                 <img src="image/img_logo.png" alt="豊川信用金庫ロゴ">
                 <p>金融機関コード：1557</p>
             </div>
+
+            
+
             <div class="header-nav-container">
-                <nav class="header-nav">
+                <nav class="header-nav" id="global-nav">
                     <ul>
                         <li><a href="#activity">取り組み</a></li>
                         <li><a href="#working-style">働き方</a></li>
@@ -161,7 +174,8 @@
                             お客様のニーズを捉え、預金・融資・金融商品などの提案を行います。</p>
                     </div>
                 </div>
-                <div class="business-content-item-right">
+                <div class="business-content-item-left">
+                    <img src="image/BC02_yokin.jpeg" alt="預金業務">
                     <div class="business-content-item-text">
                         <h3>
                             <span class="title3">預金業務</span>
@@ -170,7 +184,6 @@
                             「笑顔」を活かしたFace to Faceで、お客さまのおもてなしをします。
                             様々なライフステージのお客様との関係を深め預金・融資・金融商品などの提案を行います。</p>
                     </div>
-                    <img src="image/BC02_yokin.jpeg" alt="預金業務">
                 </div>
                 <div class="business-content-item-left">
                     <img src="image/BC03_yushi.jpeg" alt="融資業務">
@@ -535,6 +548,15 @@
     </footer>
     <!-- トップに戻るボタンを追加 -->
     <button id="to-top-button" aria-label="トップに戻る">↑</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+		$(function(){
+			$(".drawer_toggle").click(function(){
+				$(this).toggleClass("open");
+				$(".header-nav").toggleClass("sp_open");
+			});
+		});
+	</script>
     <script src="js/scroll.js"></script>
 </body>
 </html>
