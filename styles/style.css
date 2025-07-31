@@ -1,0 +1,372 @@
+
+/* --------------------tag定義-------------------- */
+body {
+    /* font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; */
+    font-family: "Noto Sans JP", Meiryo, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1.25rem;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 2.375rem;
+    color: #217AC5;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    color: #217AC5;
+}
+h4 {
+    font-size: 1.25rem;
+}
+p{
+    /* font-size: 1.25rem; */
+    margin: 0;
+    padding: 0;
+}
+
+th{
+    background-color: #f5f5f5;
+    width: 20%;
+}
+
+td{
+    background-color: #fff;
+}
+
+.section-title{
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before{
+    content: '';
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-color: #217AC5;
+    position: absolute;
+    top: calc(50% - 1.1875rem);
+    left: -4rem;
+}
+
+.section-title::after{
+    content: '';
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-color: #D32F2F;
+    position: absolute;
+    top: calc(50% - 1.1875rem);
+    right: -4rem;
+}
+
+.title3{
+    padding-left: 1em;
+    position: relative;
+}
+
+.title3::before{
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 1em;
+    background-color: #D32F2F;
+    position: absolute;
+    top: calc(50% - 0.5em);
+    left: 0;
+}
+
+/* --------------------ボタンのスタイル-------------------- */
+.button-blue, .button-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 200px; */
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-blue {
+    color: #217AC5;
+    border-color: #217AC5;
+}
+
+.button-red {
+    color: #D32F2F;
+    border-color: #D32F2F;
+}
+
+/* 外部リンクアイコンのスタイル */
+.button-blue.outside-link::after,
+.button-red.outside-link::after {
+    font-family: "Font Awesome 6 Free";
+    content: '\f35d';
+    /* margin-left: 0em; */
+    /* font-size: 1.2em; */
+    transition: transform 0.3s;
+}
+
+.button-blue:hover {
+    background-color: #217AC5;
+    color: white;
+}
+
+.button-red:hover {
+    background-color: #D32F2F;
+    color: white;
+}
+
+.text-link{
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px dotted #666666;
+    color: #666666;
+}
+
+.text-link:hover{
+    border-bottom: 1px solid #666666;
+    color: #000000;
+}
+
+/* --------------------メインビジュアル-------------------- */
+.hero {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* --------------------コンテンツ-------------------- */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    margin-bottom: 5rem;
+}
+
+.message{
+    text-align: center;
+    /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
+}
+
+/* --------------------地域活動-------------------- */
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+
+    & p{
+        width: 12em;
+        text-align: center;
+    }
+}
+
+.working-style-content{
+    margin: 0 calc(50% - 50vw);
+    padding: 2rem calc(50vw - 50%);
+    background-color: #e0edff;
+}
+
+/* --------------------トップに戻るボタン-------------------- */
+#to-top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #217AC5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* 初期状態では非表示 */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+#to-top-button:hover {
+    opacity: 1;
+}
+
+/* --------------------レスポンシブ対応-------------------- */
+
+/* 画像のレスポンシブ対応 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* テーブルの横スクロール対応 */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* タブレット対応 (768px以下) */
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    /* メインビジュアル */
+    .hero {
+        margin-top: 80px;
+    }
+
+    /* コンテンツ */
+    .content {
+        padding: 0 1rem;
+    }
+
+    /* タイトル */
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    /* セクションタイトル */
+    .section-title::before,
+    .section-title::after {
+        width: 1.8rem;
+        height: 1.8rem;
+        top: calc(50% - 0.9rem);
+    }
+
+    .section-title::before {
+        left: -3rem;
+    }
+
+    .section-title::after {
+        right: -3rem;
+    }
+
+    /* ボタン */
+    .button-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .button-container p {
+        width: 100%;
+    }
+
+    /* トップに戻るボタン */
+    #to-top-button {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+/* スマホ対応 (480px以下) */
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    /* コンテンツ */
+    .content {
+        padding: 0 0.5rem;
+    }
+
+    /* タイトル */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* セクションタイトル */
+    .section-title::before,
+    .section-title::after {
+        width: 1.5rem;
+        height: 1.5rem;
+        top: calc(50% - 0.75rem);
+    }
+
+    .section-title::before {
+        left: -2.5rem;
+    }
+
+    .section-title::after {
+        right: -2.5rem;
+    }
+
+    .content {
+        padding: 0 1rem;
+    }
+
+    /* ボタン */
+    .button-blue, .button-red {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* トップに戻るボタン */
+    #to-top-button {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+/* タッチ操作の改善 */
+@media (hover: none) and (pointer: coarse) {
+    .button-blue, .button-red {
+        min-height: 44px; /* タッチターゲットの最小サイズ */
+    }
+    
+    .header-nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

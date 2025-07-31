@@ -1,0 +1,92 @@
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+      to {
+      transform: translateX(-100%);
+    }
+}
+.scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: stretch;
+}
+.scroll-infinity__list--left {
+    animation: infinity-scroll-left 40s infinite linear 0.5s both;
+}
+.scroll-infinity__item {
+    width: calc(100vw / 3);
+    min-width: 300px;
+}
+.scroll-infinity__item>div {
+    margin: 0.5em;
+}
+
+
+.activity-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.activity-item{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+
+    & h4{
+        margin-bottom: 0;
+    }
+}
+
+.activity-item h4{
+    text-align: center;
+}
+
+.activity-item img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.activity-item p{
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .scroll-infinity__item {
+        width: calc(100vw / 2);
+        min-width: 250px;
+    }
+
+    .activity-content {
+        flex-direction: column;
+    }
+
+    .activity-item {
+        padding: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .scroll-infinity__item {
+        width: 100vw;
+        min-width: 200px;
+    }
+
+    .activity-item {
+        padding: 1em;
+    }
+}

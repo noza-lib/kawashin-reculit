@@ -1,0 +1,80 @@
+.radius-table1c{
+    width: 300px;
+    border-radius: 15px;
+    border-spacing: 0;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.radius-table1c tr>*{
+    padding: 15px;
+    border: none;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.radius-table1c tr:first-child>*:first-child{
+    border-radius: 15px 15px 0 0;
+}
+.radius-table1c tr:last-child>*:last-child{
+    border-radius: 0 0 15px 15px;
+}
+
+.radius-table{
+    width: 100%;
+    border-radius: 15px;
+    border-spacing: 0;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+.radius-table tr>*{
+    padding: 15px;
+    border: none;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.radius-table tr:first-child>*:first-child{
+    border-radius: 15px 0 0 0;
+}
+.radius-table tr:first-child>*:last-child{
+    border-radius: 0 15px 0 0;
+}
+.radius-table tr:last-child>*:first-child{
+    border-radius: 0 0 0 15px;
+}
+.radius-table tr:last-child>*:last-child{
+    border-radius: 0 0 15px 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .radius-table1c {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    /* .radius-table {
+        font-size: 1.2rem;
+    } */
+
+    .radius-table1c tr>*,
+    .radius-table tr>* {
+        padding: 10px 8px;
+    }
+
+    /* 採用フロー */
+    .recruitment-flow p {
+        width: 6em;
+        /* font-size: 0.9rem; */
+    }
+
+    .triangle-bottom {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+    }
+}

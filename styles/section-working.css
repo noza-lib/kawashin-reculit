@@ -1,0 +1,137 @@
+.working-style-voice-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    & img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+
+.balloon2-left {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 15px;
+    min-width: 300px;
+    /* max-width: 600px; */
+    height: fit-content;
+    color: #555;
+    /* font-size: 16px; */
+    background: #ffffff;
+    /* border: solid 3px #555; */
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.balloon2-left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-right: 12px solid #ffffff;
+    z-index: 2;
+}
+
+.balloon2-left:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -14px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+    z-index: 1;
+}
+
+.working-style-voice-item-name{
+    text-align: right;
+    margin-top: 1em;
+}
+
+.working-style-data-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    margin-bottom: 1em;
+
+    & img{
+        width: 100px;
+        height: auto;
+    }
+}
+
+.working-style-data-item-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    & img{
+        filter: brightness(0) saturate(100%) invert(32%) sepia(89%) saturate(888%) hue-rotate(178deg) brightness(101%) contrast(86%);
+        padding: 1em;
+        margin: 0;
+    }
+    & p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #217AC5;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .working-style-voice-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .balloon2-left {
+        min-width: 250px;
+        margin: 1em 0;
+    }
+
+    .balloon2-left:before,
+    .balloon2-left:after {
+        display: none;
+    }
+
+    .working-style-data-item {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .working-style-data-item-content {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .balloon2-left {
+        min-width: 200px;
+        /* font-size: 14px; */
+        padding: 5px 10px;
+    }
+
+    .working-style-data-item-content p {
+        font-size: 1.2rem;
+    }
+
+}
