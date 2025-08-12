@@ -67,8 +67,20 @@
     <div class="content">
         <section class="section">
             <div class="message">
-                <h1>そばにいる だから 頼りになる</h1>
-                <p>相互扶助の精神に基づき、「誠意」と「創意」と「熱意」で
+                <!-- <video controls width="250">
+                    <source src="/shared-assets/videos/flower.webm" type="video/webm" />
+                  
+                    <source src="image/kawashin.mp4" type="video/mp4" />
+                  
+                    Download the
+                    <a href="/shared-assets/videos/flower.webm">WEBM</a>
+                    or
+                    <a href="image/kawashin.mp4">MP4</a>
+                    video.
+                </video> -->
+                <!-- <img src="image/test.gif" alt="gifテスト"> -->
+                <h1 class="fadein">そばにいる だから 頼りになる</h1>
+                <p class="fadein">相互扶助の精神に基づき、「誠意」と「創意」と「熱意」で
                 地域社会との「信頼」を築き、コミュニティ・バンクのリーダーをめざします。</p>
             </div>
         </section>
@@ -172,8 +184,8 @@
             </h2>
             <div class="business-content">
                 <div class="business-content-item-left">
-                    <img src="image/BC01_shogai.jpeg" alt="渉外業務">
-                    <div class="business-content-item-text">
+                    <img class="fadein" src="image/BC01_shogai.jpeg" alt="渉外業務">
+                    <div class="business-content-item-text fadein">
                         <h3>
                             <span class="title3">渉外業務</span>
                         </h3>
@@ -563,7 +575,22 @@
 				$(this).toggleClass("open");
 				$(".header-nav").toggleClass("sp_open");
 			});
+            $(".header-nav a").click(function(){
+				$(".drawer_toggle").removeClass("open");
+				$(".header-nav").removeClass("sp_open");
+			});
 		});
+        $(window).scroll(function (){
+            $('.fadein').each(function(){
+                var elemPos = $(this).offset().top,
+                scroll = $(window).scrollTop(),
+                windowHeight = $(window).height();
+
+                if (scroll > elemPos - windowHeight + 150){
+                    $(this).addClass('scrollin');
+                }
+            });
+        });
 	</script>
     <script src="js/scroll.js"></script>
 </body>

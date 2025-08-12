@@ -112,7 +112,7 @@
     }
 
     .working-style-data-item {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 1.5em;
     }
 

@@ -67,12 +67,6 @@
         padding: 10px 8px;
     }
 
-    /* 採用フロー */
-    .recruitment-flow p {
-        width: 6em;
-        /* font-size: 0.9rem; */
-    }
-
     .triangle-bottom {
         border-left: 100px solid transparent;
         border-right: 100px solid transparent;

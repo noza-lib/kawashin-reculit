@@ -71,6 +71,10 @@ nav a {
         padding: 0 1rem;
     }
 
+    nav a {
+        font-size: 1.25rem;
+    }
+
     .header-container {
         flex-direction: column;
         justify-content: center;
@@ -175,11 +179,12 @@ nav a {
         z-index: 200;
         box-sizing: border-box;
         position: absolute;
-        top: 0;
-        right: 0;
+        /* top: 0; */
+        right: 10px;
         display: inline-block;
         width: 60px;
         height: 60px;
+        margin: auto 0;
     }
     .drawer_toggle span {
         position: absolute;
