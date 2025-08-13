@@ -1,0 +1,14 @@
+.center-nav-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.center-nav-content-item{
+    width: 30%;
+    & img{
+        margin: 0 auto;
+    }
+}
