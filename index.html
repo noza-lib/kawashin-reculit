@@ -52,22 +52,6 @@
         </div>
     </header>
 
-    <div class="hero">
-        <!-- <div class="video-container" style="position: relative; width: 100%; padding-bottom: 50%;">
-            <iframe 
-                style="position: absolute; left: 50%; transform: translate(-50%, 0%); width: 100%; height: 100%; max-height: 640px;"
-                src="https://www.youtube.com/embed/nsFMzLQ0dT4?si=NMthZk4BSaiS_EOc" 
-                title="豊川信用金庫 採用動画" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div> -->
-        <div class="youtube">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nsFMzLQ0dT4?si=NMthZk4BSaiS_EOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-
     <div class="content">
         <section class="section">
             <div class="message">
@@ -98,6 +82,12 @@
                 </a>
             </div>
         </section>
+
+        <div class="hero">
+            <div class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nsFMzLQ0dT4?si=NMthZk4BSaiS_EOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
 
         <section id="center-nav" class="section">
             <h2>
@@ -204,9 +194,10 @@
                     </div>
                 </div>
                 <h3>
-                    <span class="title3">かわしんのデータ</span>
+                    <span class="title3">数字で見る、豊川信用金庫</span>
                 </h3>
                 <div class="working-style-data">
+                    <h4>地域と共に、築いてきた歴史と信頼</h4>
                     <div class="working-style-data-item">
                         <table class="radius-table1c">
                             <tr>
@@ -247,6 +238,9 @@
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                    <h4>「長く働きたい」と思える環境がここに</h4>
+                    <div class="working-style-data-item">
                         <table class="radius-table1c">
                             <tr>
                                 <th>平均勤続年数</th> 
@@ -286,6 +280,9 @@
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                    <h4>多様な人が安心して働ける職場を目指して</h4>
+                    <div class="working-style-data-item">
                         <table class="radius-table1c">
                             <tr>
                                 <th>新卒採用者の定着率</th> 
@@ -444,7 +441,7 @@
                         </tr>
                         <tr>
                             <th>採用職種</th>
-                            <td>プール職</td>
+                            <td>総合職（プール職）</td>
                         </tr>
                     </table>
                     <h3>
@@ -546,8 +543,8 @@
             </h2>
             <div class="faq-content">
                 <div class="faq-item">
-                    <h3>Q. 採用試験はどのように行われますか？</h3>
-                    <p>A. 筆記試験と面接試験を実施します。</p>
+                    <div class="accordion-header"><span>Q. 採用試験はどのように行われますか？</span></div>
+                    <div class="accordion-content"><span>A. 筆記試験と面接試験を実施します。</span></div>
                 </div>
             </div>
         </section>
@@ -602,6 +599,9 @@
                 <p class="contact-tel">0120-09-2317</p>
                 <p>担当：人事部（渡辺、大西）</p>
             </div>
+            <a href="https://form.run/@souma-nozawa-lib-aVhg6C6Q6B9zi1kmvmnR" class="button-blue" target="_blank" rel="noopener noreferrer">
+                <p>お問い合わせ</p>
+            </a>
         </section>
     </div>
 
@@ -635,6 +635,10 @@
                     $(this).addClass('scrollin');
                 }
             });
+        });
+        $('.accordion-header').click(function() {
+            $(this).next().slideToggle();
+            $(this).toggleClass('active');
         });
 	</script>
     <script src="js/scroll.js"></script>
