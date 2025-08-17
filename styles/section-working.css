@@ -52,6 +52,13 @@
     z-index: 1;
 }
 
+.working-style-data h4{
+    font-size: 1.75rem;
+
+    margin: 1em 0;
+    text-align: center;
+}
+
 .working-style-voice-item-name{
     text-align: right;
     margin-top: 1em;

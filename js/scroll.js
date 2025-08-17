@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ヘッダーナビのリンクをすべて取得
-    const navLinks = document.querySelectorAll('.header-nav a');
+    // ヘッダーナビとセンターナビのリンクをすべて取得
+    const navLinks = document.querySelectorAll('.header-nav a, .center-nav-content-item a');
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {

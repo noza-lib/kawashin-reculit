@@ -162,13 +162,16 @@ section{
     margin-top: 100px;
 }
 
-.youtube {
+/* .youtube {
     width: 100%;
     aspect-ratio: 16 / 9;
-  }
+  } */
   .youtube iframe {
+    aspect-ratio: 16 / 9;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: auto;
+    /* height: calc(100vh - 100px); */
+
   }
 
 /* --------------------コンテンツ-------------------- */
@@ -178,16 +181,31 @@ section{
     padding: 0 2rem;
 }
 
+.message-container{
+    margin-top: 100px;
+    width: 100vw;
+    height: calc(100vh - 100px);
+    left: 0;
+    /* margin: 50px auto; */
+    background-image: url(../image/mainvisual1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay;
+}
+
 .message{
-    width: 800px;
-    height: 50vh;
-    margin: 50px auto;
+    width: 825px;
+    height: 100%;
+    margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
+    /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
 }
 
 .fadein {
@@ -292,7 +310,7 @@ section{
   
   /* hover */
   .accordion-header:hover {
-    background-color: #F2F2F2;
+    background-color: #85b8ff;
   }
   
 /* --------------------トップに戻るボタン-------------------- */
