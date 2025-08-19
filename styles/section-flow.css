@@ -1,7 +1,68 @@
-.recruitment-flow{ 
+.recruitment-flow{
+    & a {
+        margin: 0 auto;
+        display: block;
+        width: fit-content;
+    }
+}
+
+.recruitment-flow-content{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recruitment-flow-content-item{
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    gap: 10px;
+
+    & p{
+        display: inline-block;
+        height: 4rem;
+    }
+}
+
+.recruitment-flow-content-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 75px;
+        height: 75px;
+        /* object-fit: cover; */
+    }
+}
+
+.triangle {
+    height: 25px;
+    aspect-ratio: cos(30deg);
+    clip-path: polygon(0 0,100% 50%,0 100%);
+    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
+}
+
+
+
+
+
+
+
+
+/* .recruitment-flow{ 
+    display: flex;
+    flex-direction: column;
     gap: 1em;
     justify-content: center;
     align-items: center;
@@ -46,4 +107,4 @@
         font-size: 0.9rem;
     }
 
-}
+} */

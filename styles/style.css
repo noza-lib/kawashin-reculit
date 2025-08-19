@@ -247,7 +247,7 @@ section{
 }
 
 .accordion-header {
-    background-color: #217AC5;
+    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
     color: #FFF;
     font-weight: bold;
     border-radius: 10px 10px 0 0;
