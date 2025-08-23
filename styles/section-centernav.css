@@ -2,28 +2,32 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
     text-align: center;
 }
 
-.center-nav-content-item{
-    width: 30%;
-    & img{
-        margin: 0 auto;
-    }
+.center-nav-content-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
+    margin-bottom: 20px;
 }
 
 .center-nav-content-item-img{
-    border-radius: 50%;
-    max-width: 250px;
-    height: auto;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(0%) hue-rotate(127deg) brightness(107%) contrast(101%);
 }
 
 .center-nav-content-item-text{
     font-size: 2.375rem;
     font-weight: bold;
     color: #217AC5;
-    margin-top: 10px;
 }
 
 
@@ -44,5 +48,11 @@
 
     & h3{
         margin-top: 0;
+    }
+
+    & img{
+        margin: 2rem auto 0;
+        width: 90%;
+        
     }
 }

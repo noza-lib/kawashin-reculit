@@ -34,23 +34,32 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
+    background-color: #e0edff;
+    /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
     display: flex;
     justify-content: center;
     align-items: center;
 
     & img{
-        width: 75px;
-        height: 75px;
+        width: 50%;
+        height: 50%;
+        filter: brightness(0) saturate(100%) invert(33%) sepia(97%) saturate(976%) hue-rotate(182deg) brightness(93%) contrast(84%);
         /* object-fit: cover; */
     }
 }
 
 .triangle {
+    background-color: #e0edff;
     height: 25px;
     aspect-ratio: cos(30deg);
     clip-path: polygon(0 0,100% 50%,0 100%);
-    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
+    /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
+}
+
+.recruitment-flow-content-space{
+    width: 20px;
+    height: 64px;
+    /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
 }
 
 
