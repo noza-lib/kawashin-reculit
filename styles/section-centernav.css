@@ -10,8 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
     background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
     margin-bottom: 20px;
@@ -41,7 +41,7 @@
 
 .welfare-content-item{
     background-color: #e0edff;
-    width: 825px;
+    max-width: 825px;
     margin: auto;
     margin-top: 50px;
     padding: 2rem;

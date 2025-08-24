@@ -31,8 +31,8 @@
 }
 
 .recruitment-flow-content-circle{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
     background-color: #e0edff;
     /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
