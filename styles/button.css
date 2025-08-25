@@ -1,0 +1,114 @@
+.button-blue, .button-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-blue {
+    color: #217AC5;
+    border-color: #217AC5;
+}
+
+.button-red {
+    color: #D32F2F;
+    border-color: #D32F2F;
+}
+
+/* 外部リンクアイコンのスタイル */
+.button-blue.outside-link::after,
+.button-red.outside-link::after {
+    font-family: "Font Awesome 6 Free";
+    content: '\f35d';
+    transition: transform 0.3s;
+}
+
+.button-blue:hover {
+    background-color: #217AC5;
+    color: white;
+}
+
+.button-red:hover {
+    background-color: #D32F2F;
+    color: white;
+}
+
+/* 地域活動用ボタン */
+.button-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+
+    & p{
+        width: 12em;
+        text-align: center;
+    }
+}
+
+/* --------------------トップに戻るボタン-------------------- */
+#to-top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #217AC5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* 初期状態では非表示 */
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+#to-top-button:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    /* ボタン */
+    .button-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .button-container p {
+        width: 100%;
+    }
+
+    /* トップに戻るボタン */
+    #to-top-button {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .button-blue, .button-red {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* トップに戻るボタン */
+    #to-top-button {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}

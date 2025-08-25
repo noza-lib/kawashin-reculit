@@ -1,5 +1,3 @@
-
-/* --------------------tag定義-------------------- */
 body {
     /* font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; */
     font-family: "Noto Sans JP", Meiryo, sans-serif;
@@ -83,55 +81,6 @@ section{
     right: -4rem;
 }
 
-.section-title2{
-    position: relative;
-    display: inline-block;
-}
-
-.section-title2::before{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #D32F2F;
-    position: absolute;
-    bottom: -0.25em;
-    left: 0;
-}
-
-.section-title3{
-    position: relative;
-    display: inline-block;
-}
-
-.section-title3::before {
-    content: "";
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: -50px;
-    left: -170px;
-    background-color: red;
-    background-image: url('../image/charman.png');
-    background-position: center;
-    background-size: contain;
-}
-
-.section-title3::after {
-    content: "";
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    position: absolute; 
-    top: -50px;
-    right: -170px;
-    background-color: red;
-    background-image: url('../image/charwoman.png');
-    background-position: center;
-    background-size: contain;
-}
-
 .section-title4{
     display: flex;
     flex-direction: column;
@@ -147,9 +96,6 @@ section{
         color: #c5ddff;
     }
 }
-
-
-
 
 .title3{
     padding-left: 1em;
@@ -167,84 +113,20 @@ section{
     left: 0;
 }
 
-/* --------------------ボタンのスタイル-------------------- */
-.button-blue, .button-red {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 200px; */
-    padding: 10px 20px;
-    background-color: white;
-    border: 2px solid;
-    border-radius: 100px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.button-blue {
-    color: #217AC5;
-    border-color: #217AC5;
-}
-
-.button-red {
-    color: #D32F2F;
-    border-color: #D32F2F;
-}
-
-/* 外部リンクアイコンのスタイル */
-.button-blue.outside-link::after,
-.button-red.outside-link::after {
-    font-family: "Font Awesome 6 Free";
-    content: '\f35d';
-    /* margin-left: 0em; */
-    /* font-size: 1.2em; */
-    transition: transform 0.3s;
-}
-
-.button-blue:hover {
-    background-color: #217AC5;
-    color: white;
-}
-
-.button-red:hover {
-    background-color: #D32F2F;
-    color: white;
-}
-
 .text-link{
     display: inline-block;
-    /* text-decoration: none;
-    border-bottom: 1px dotted #666666; */
     color: #666666;
 }
 
 .text-link:hover{
-    /* border-bottom: 1px solid #666666; */
     color: #000000;
 }
 
-/* --------------------メインビジュアル-------------------- */
-.hero {
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-    color: black;
-    text-align: center;
-    margin-top: 100px;
-}
-
-/* .youtube {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-  } */
-  .youtube iframe {
+.youtube iframe {
     aspect-ratio: 16 / 9;
     width: 100%;
     height: auto;
-    /* height: calc(100vh - 100px); */
-
-  }
+}
 
 /* --------------------コンテンツ-------------------- */
 .content {
@@ -303,124 +185,6 @@ section{
     }
 }
 
-/* --------------------地域活動-------------------- */
-
-.button-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: center;
-
-    & p{
-        width: 12em;
-        text-align: center;
-    }
-}
-
-.working-style-content{
-    margin: 0 calc(50% - 50vw);
-    padding: 2rem calc(50vw - 50%);
-    background-color: #e0edff;
-}
-
-
-/* --------------------よくある質問-------------------- */
-.accordion-content {
-    display: none;
-}
-
-.accordion-header {
-    background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
-    color: #FFF;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border-radius: 10px 10px 0 0;
-    padding: 12px 45px 10px 45px;
-    margin: 20px 0 0;
-    transition: background .3s ease;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .accordion-header::before,
-  .accordion-header::after{
-    position:absolute;
-    content:'';
-    top:1px;
-    right:20px;
-    bottom:0;
-    width:24px;
-    height:3px;
-    margin:auto;
-    background:#FFF;
-  }
-  .accordion-header::after{
-    transform:rotate(-90deg);
-    transition:transform 0.3s;
-  }
-  .accordion-header.active::after{transform:rotate(0deg);}
-  
-  .accordion-content {
-    background-color: #FFF;
-    border: 1px solid #217AC5;
-    border-radius: 0 0 10px 10px;
-    padding: 12px 45px 10px 45px;
-  }
-  
-  .accordion-header span,
-  .accordion-content span{
-    /* padding-left: 25px; */
-    position: relative;
-  }
-  
-  /* .accordion-header span::before{
-    position: absolute;
-    content:"Q";
-    top: 2px;
-    left: 0;
-    color: #151E2F;
-    font-size: 17px;
-  }
-  
-  
-  .accordion-content span::before{
-      position: absolute;
-    content:"A";
-    top: 3px;
-    left: 0;
-    color: #151E2F;
-    font-size: 17px;
-  } */
-  
-  /* hover */
-  .accordion-header:hover {
-    background-color: #85b8ff;
-  }
-  
-/* --------------------トップに戻るボタン-------------------- */
-#to-top-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: #217AC5;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* 初期状態では非表示 */
-    opacity: 0.8;
-    transition: opacity 0.3s;
-    z-index: 1000;
-}
-
-#to-top-button:hover {
-    opacity: 1;
-}
-
 /* --------------------レスポンシブ対応-------------------- */
 
 /* 画像のレスポンシブ対応 */
@@ -442,21 +206,6 @@ img {
         font-size: 1rem;
     }
 
-    .mobile-br{
-        display: block;
-    }
-
-    /* メインビジュアル */
-    .hero {
-        margin-top: 80px;
-    }
-
-    /* コンテンツ */
-    .content {
-        padding: 0 1rem;
-    }
-
-    /* タイトル */
     h1 {
         font-size: 28px;
     }
@@ -469,7 +218,10 @@ img {
         font-size: 1.3rem;
     }
 
-    /* セクションタイトル */
+    .content {
+        padding: 0 1rem;
+    }
+
     .section-title::before,
     .section-title::after {
         width: 1.8rem;
@@ -484,25 +236,6 @@ img {
     .section-title::after {
         right: -3rem;
     }
-
-    /* ボタン */
-    .button-container {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .button-container p {
-        width: 100%;
-    }
-
-    /* トップに戻るボタン */
-    #to-top-button {
-        bottom: 20px;
-        right: 20px;
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-    }
 }
 
 /* スマホ対応 (480px以下) */
@@ -512,12 +245,6 @@ img {
         font-size: 0.9rem;
     }
 
-    /* コンテンツ */
-    .content {
-        padding: 0 0.5rem;
-    }
-
-    /* タイトル */
     h1 {
         font-size: 24px;
     }
@@ -530,7 +257,14 @@ img {
         font-size: 1.2rem;
     }
 
-    /* セクションタイトル */
+    .content {
+        padding: 0 0.5rem;
+    }
+
+    .mobile-br{
+        display: block;
+    }
+
     .section-title::before,
     .section-title::after {
         width: 1.5rem;
@@ -544,25 +278,6 @@ img {
 
     .section-title::after {
         right: -2.5rem;
-    }
-
-    .content {
-        padding: 0 1rem;
-    }
-
-    /* ボタン */
-    .button-blue, .button-red {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    /* トップに戻るボタン */
-    #to-top-button {
-        bottom: 15px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
     }
 }
 
