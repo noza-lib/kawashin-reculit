@@ -47,7 +47,6 @@ td{
 
 section{
     padding: 90px 0;
-    margin-bottom: 5rem;
 }
 
 .mobile-br{
@@ -158,8 +157,6 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%); */
-    /* text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
 }
 
 .load-fadein {
@@ -235,6 +232,11 @@ img {
 
     .section-title::after {
         right: -3rem;
+    }
+
+    .message-container{
+        margin-top: 80px;
+        height: calc(100vh - 80px);
     }
 }
 

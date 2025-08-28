@@ -12,13 +12,13 @@
 }
 
 .button-blue {
-    color: #217AC5;
-    border-color: #217AC5;
+    background-color: #217AC5;
+    color: white;
 }
 
 .button-red {
-    color: #D32F2F;
-    border-color: #D32F2F;
+    background-color: #D32F2F;
+    color: white;
 }
 
 /* 外部リンクアイコンのスタイル */
@@ -30,13 +30,15 @@
 }
 
 .button-blue:hover {
-    background-color: #217AC5;
-    color: white;
+    background-color: white;
+    color: #217AC5;
+    border-color: #217AC5;
 }
 
 .button-red:hover {
-    background-color: #D32F2F;
-    color: white;
+    background-color: white;
+    color: #D32F2F;
+    border-color: #D32F2F;
 }
 
 /* 地域活動用ボタン */

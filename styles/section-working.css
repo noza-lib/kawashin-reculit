@@ -25,12 +25,9 @@
     margin: 1.5em 0 1.5em 15px;
     padding: 7px 15px;
     min-width: 300px;
-    /* max-width: 600px; */
     height: fit-content;
     color: #555;
-    /* font-size: 16px; */
     background: #ffffff;
-    /* border: solid 3px #555; */
     box-sizing: border-box;
     border-radius: 15px;
     flex: 1;
@@ -125,7 +122,6 @@
     }
 
     .working-style-data-item {
-        /* flex-direction: column; */
         gap: 1.5em;
     }
 
@@ -139,7 +135,6 @@
 @media screen and (max-width: 480px) {
     .balloon2-left {
         min-width: 200px;
-        /* font-size: 14px; */
         padding: 5px 10px;
     }
 
