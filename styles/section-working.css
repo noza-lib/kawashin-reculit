@@ -95,15 +95,35 @@
         padding: 1em;
         margin: 0;
     }
-    & p{
+    /* & p{
         font-size: 2rem;
         font-weight: bold;
         color: #217AC5;
         margin: 0;
         padding: 0;
-    }
+    } */
 }
 
+.working-style-data-item-content-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.working-style-data-item-content-text .number{
+    font-size: 2.375rem;
+    font-weight: bold;
+    color: #217AC5;
+}
+
+.working-style-data-item-content-text .unit{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #217AC5;
+    transform: translateY(-15%);
+}
 
 @media screen and (max-width: 768px) {
     .working-style-voice-item {
