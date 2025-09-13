@@ -121,6 +121,69 @@ section{
     color: #000000;
 }
 
+#news{
+    position: relative;
+    padding-bottom: 230px;
+}
+
+.news-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.news-content h2{
+    min-width: 5em;
+}
+
+.news-content .section-title4{
+    margin-bottom: 0;
+}
+
+.news-content-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+
+.news-link{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #c8c8c8;
+    width: 100%;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.news-link::before{
+    content: '';
+    position: absolute;
+    display: block;
+    border-top: 3px solid #D32F2F;
+    border-right: 3px solid #D32F2F;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    right: 5px;
+}
+
+.news-link:hover{
+    opacity: 1;
+}
+
+.hukidashi{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 70px;
+    right: 150px;
+}
+
 .youtube iframe {
     aspect-ratio: 16 / 9;
     width: 100%;
