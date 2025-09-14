@@ -40,21 +40,27 @@
     text-align: center;
 }
 
+.welfare-content{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
 .welfare-content-item{
     background-color: #e0edff;
-    max-width: 825px;
+    width: 400px;
     margin: auto;
     margin-top: 50px;
     padding: 2rem;
-
-    & h3{
-        margin-top: 0;
-    }
+    scroll-snap-align: start;
 
     & img{
-        margin: 2rem auto 0;
-        width: 90%;
-        
+        margin-bottom: 1rem;
+        width: 100%; 
     }
 }
 
