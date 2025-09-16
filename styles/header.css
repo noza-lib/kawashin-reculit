@@ -28,7 +28,7 @@ nav a {
     font-weight: bold;
 }
 
-.header-container{
+.header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,33 +38,39 @@ nav a {
     height: 100%;
 }
 
-.header-logo-container{
-    font-size: 0.75rem;
-    text-align: left;
+.header-logo-container {
+    /* font-size: 1rem; */
+    text-align: right;
+    font-weight: bold;
+    transform: translateY(10px);
+
+    & p {
+        transform: translateY(-10px);
+    }
 }
 
-.header-nav-container{
+.header-nav-container {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    & p{
+    & p {
         width: 7em;
         text-align: center;
     }
 }
 
-.header-nav a{
+.header-nav a {
     color: #333333;
     padding: 1rem 0;
 }
 
-.header-nav a:hover{
+.header-nav a:hover {
     color: #217AC5;
     transition: color 0.3s ease;
 }
 
-.drawer_toggle{
+.drawer_toggle {
     display: none;
 }
 
@@ -128,7 +134,7 @@ nav a {
 
 /* ハンバーガーメニュー対応 (768px以下) */
 @media screen and (max-width: 768px) {
-    header nav{
+    header nav {
         box-sizing: border-box;
         position: fixed;
         top: 60px;
@@ -146,7 +152,7 @@ nav a {
         right: 0;
     }
 
-    header nav ul{
+    header nav ul {
         flex-direction: column;
         position: absolute;
         padding: 0;
@@ -155,7 +161,7 @@ nav a {
         transform: translate(-50%, -50%);
     }
 
-    header nav li a{
+    header nav li a {
         display: block;
         padding: 15px;
         border-radius: 5px;
@@ -163,7 +169,7 @@ nav a {
         text-decoration: none;
         margin: 0 auto;
     }
-    
+
     .drawer_toggle {
         z-index: 200;
         box-sizing: border-box;
@@ -174,6 +180,7 @@ nav a {
         height: 60px;
         margin: auto 0;
     }
+
     .drawer_toggle span {
         position: absolute;
         top: 19px;
@@ -185,24 +192,30 @@ nav a {
         background-color: #666;
         vertical-align: top;
     }
+
     .drawer_toggle span:nth-child(2) {
         margin-top: 10px;
     }
+
     .drawer_toggle span:last-child {
         margin-top: 20px;
     }
+
     .drawer_toggle.open span {
         top: 29px;
         left: 14px;
         width: 35px;
         margin: 0;
     }
+
     .drawer_toggle.open span:first-child {
         transform: rotate(45deg);
     }
+
     .drawer_toggle.open span:nth-child(2) {
         display: none;
     }
+
     .drawer_toggle.open span:last-child {
         transform: rotate(-45deg);
     }

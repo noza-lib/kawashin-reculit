@@ -1,71 +1,69 @@
-.business-content-item-left{
+.business-content-item-left {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2em;
     margin-bottom: 2em;
 
-    & img{
+    & img {
         max-width: 800px;
         min-width: 500px;
         margin-left: -2rem;
     }
 
-    & .business-content-item-text{
+    & .business-content-item-text {
         max-width: 400px;
     }
 }
 
-.business-content-item-right{
+.business-content-item-right {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2em;
     margin-bottom: 2em;
 
-    & img{
+    & img {
         max-width: 800px;
         min-width: 500px;
         margin-right: -2rem;
     }
 
-    & .business-content-item-text{
+    & .business-content-item-text {
         max-width: 400px;
     }
 }
 
-.welfare-content-message{
+.welfare-content-message {
     font-size: 2.375rem;
     margin-top: 20px;
     text-align: center;
 }
 
-.welfare-content{
+.welfare-content {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
 
-.welfare-content-item{
+.welfare-content-item {
     background-color: #e0edff;
-    width: 400px;
-    margin: auto;
-    margin-top: 50px;
+    min-width: 500px;
     padding: 2rem;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 
-    & img{
+    & img {
         margin-bottom: 1rem;
-        width: 100%; 
+        width: 100%;
     }
 }
 
 
 @media screen and (max-width: 768px) {
+
     .business-content-item-left,
     .business-content-item-right {
         flex-direction: column;
@@ -86,6 +84,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
     .business-content-item-left,
     .business-content-item-right {
         margin-bottom: 1.5em;
