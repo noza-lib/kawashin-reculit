@@ -64,12 +64,12 @@
     z-index: 1;
 }
 
-.working-style-data h4 {
+/* .working-style-data h4 {
     font-size: 1.75rem;
     color: #217AC5;
     margin: 1em 0;
     text-align: center;
-}
+} */
 
 .working-style-voice-item-name {
     text-align: right;
@@ -83,7 +83,7 @@
     align-items: stretch;
     justify-content: center;
     text-align: center;
-    gap: 1em;
+    gap: 20px;
     margin-bottom: 1em;
 
     & img {
@@ -97,7 +97,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    /* gap: 1em; */
 
     & img {
         filter: brightness(0) saturate(100%) invert(32%) sepia(89%) saturate(888%) hue-rotate(178deg) brightness(101%) contrast(86%);
@@ -123,7 +123,7 @@
 }
 
 .working-style-data-item-content-text .number {
-    font-size: 2.375rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #217AC5;
 }
@@ -132,7 +132,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #217AC5;
-    transform: translateY(-15%);
+    transform: translateY(-35%);
 }
 
 
