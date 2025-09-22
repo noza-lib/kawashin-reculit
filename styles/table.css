@@ -1,25 +1,28 @@
-.radius-table1c{
-    width: 300px;
+.radius-table1c {
+    width: 30%;
     border-radius: 15px;
     border-spacing: 0;
     border: none;
     border-left: 1px solid #ddd;
     border-top: 1px solid #ddd;
 }
-.radius-table1c tr>*{
+
+.radius-table1c tr>* {
     padding: 15px;
     border: none;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.radius-table1c tr:first-child>*:first-child{
+
+.radius-table1c tr:first-child>*:first-child {
     border-radius: 15px 15px 0 0;
 }
-.radius-table1c tr:last-child>*:last-child{
+
+.radius-table1c tr:last-child>*:last-child {
     border-radius: 0 0 15px 15px;
 }
 
-.radius-table{
+.radius-table {
     width: 100%;
     border-radius: 15px;
     border-spacing: 0;
@@ -27,30 +30,33 @@
     border-left: 1px solid #ddd;
     border-top: 1px solid #ddd;
 }
-.radius-table tr>*{
+
+.radius-table tr>* {
     padding: 15px;
     border: none;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.radius-table tr:first-child>*:first-child{
+
+.radius-table tr:first-child>*:first-child {
     border-radius: 15px 0 0 0;
 }
-.radius-table tr:first-child>*:last-child{
+
+.radius-table tr:first-child>*:last-child {
     border-radius: 0 15px 0 0;
 }
-.radius-table tr:last-child>*:first-child{
+
+.radius-table tr:last-child>*:first-child {
     border-radius: 0 0 0 15px;
 }
-.radius-table tr:last-child>*:last-child{
+
+.radius-table tr:last-child>*:last-child {
     border-radius: 0 0 15px 0;
 }
 
 
 
-@media screen and (max-width: 768px) {
-
-}
+@media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 480px) {
     .radius-table1c {
@@ -65,6 +71,10 @@
     .radius-table1c tr>*,
     .radius-table tr>* {
         padding: 10px 8px;
+    }
+
+    .radius-table th {
+        width: 6em;
     }
 
     .triangle-bottom {

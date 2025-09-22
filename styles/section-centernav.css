@@ -1,4 +1,4 @@
-.center-nav-content{
+.center-nav-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.center-nav-content-circle{
+.center-nav-content-circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,16 +17,22 @@
     margin-bottom: 20px;
 }
 
-.center-nav-content-item-img{
+.center-nav-content-item-img {
     width: 60%;
     height: 60%;
     margin: 0 auto;
     filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(0%) hue-rotate(127deg) brightness(107%) contrast(101%);
 }
 
-.center-nav-content-item-text{
+.center-nav-content-item-text {
     font-size: 2.375rem;
     font-weight: bold;
     color: #217AC5;
 }
 
+/* タブレット対応 (768px以下) */
+@media screen and (max-width: 768px) {
+    .center-nav-content-item-text {
+        font-size: 2rem;
+    }
+}

@@ -1,9 +1,10 @@
 @keyframes infinity-scroll-left {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-      to {
-      transform: translateX(-100%);
+
+    to {
+        transform: translateX(-100%);
     }
 }
 
@@ -12,31 +13,35 @@
     overflow: hidden;
     margin-bottom: 2rem;
 }
+
 .scroll-infinity__list {
     display: flex;
     list-style: none;
     padding: 0;
     align-items: stretch;
 }
+
 .scroll-infinity__list--left {
     animation: infinity-scroll-left 40s infinite linear 0.5s both;
 }
+
 .scroll-infinity__item {
     width: calc(100vw / 3);
     min-width: 300px;
 }
+
 .scroll-infinity__item>div {
     margin: 0.5em;
 }
 
 
-.activity-content{
+.activity-content {
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
 
-.activity-item{
+.activity-item {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -44,30 +49,30 @@
     border-radius: 15px;
     border: 1px solid #ddd;
 
-    & h4{
+    & h4 {
         margin-bottom: 0;
     }
 }
 
-.activity-item h4{
+.activity-item h4 {
     text-align: center;
 }
 
-.activity-item img{
+.activity-item img {
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
 
-.activity-item p{
+.activity-item p {
     margin: 0;
 }
 
-#activity{
+#activity {
     position: relative;
 }
 
-.char-man{
+.char-man {
     position: absolute;
     width: 200px;
     height: 200px;
@@ -75,7 +80,7 @@
     left: 0;
 }
 
-.char-woman{
+.char-woman {
     position: absolute;
     width: 200px;
     height: 200px;
@@ -99,6 +104,20 @@
         padding: 1.5em;
     }
 
+    .char-man {
+        width: 150px;
+        height: 150px;
+        top: 50px;
+        left: 50px;
+    }
+
+    .char-woman {
+        width: 150px;
+        height: 150px;
+        bottom: 50px;
+        right: 50px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -109,5 +128,19 @@
 
     .activity-item {
         padding: 1em;
+    }
+
+    .char-man {
+        width: 150px;
+        height: 150px;
+        top: 0;
+        left: 0;
+    }
+
+    .char-woman {
+        width: 150px;
+        height: 150px;
+        bottom: 50px;
+        right: 0;
     }
 }
