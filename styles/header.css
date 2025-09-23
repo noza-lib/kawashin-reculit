@@ -1,7 +1,7 @@
 header {
     background-color: white;
     color: black;
-    height: 100px;
+    height: 80px;
     padding: 0 2rem;
     position: fixed;
     top: 0;
@@ -74,14 +74,14 @@ nav a {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     header {
         height: 80px;
         padding: 0 1rem;
     }
 
     nav a {
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
 
     .header-container {
@@ -128,16 +128,17 @@ nav a {
     }
 
     .header-nav a {
+        font-size: 1.25rem;
         padding: 0.3rem 0;
     }
 }
 
 /* ハンバーガーメニュー対応 (768px以下) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     header nav {
         box-sizing: border-box;
         position: fixed;
-        top: 60px;
+        top: 80px;
         width: 100%;
         height: calc(100vh - 60px);
         background-color: white;

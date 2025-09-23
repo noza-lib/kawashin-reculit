@@ -32,7 +32,22 @@
 
 /* タブレット対応 (768px以下) */
 @media screen and (max-width: 768px) {
+    .center-nav-content {
+        gap: 20px;
+    }
+
     .center-nav-content-item-text {
         font-size: 2rem;
+    }
+}
+
+/* スマホ対応 (480px以下) */
+@media screen and (max-width: 480px) {
+    .center-nav-content {
+        gap: 10px;
+    }
+
+    .center-nav-content-item-text {
+        font-size: 1.5rem;
     }
 }

@@ -45,6 +45,7 @@
     flex-direction: row;
     gap: 100px;
     margin-top: 50px;
+    padding: 0 500px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
@@ -94,5 +95,14 @@
     .business-content-item-left,
     .business-content-item-right {
         margin-bottom: 1.5em;
+    }
+
+    .welfare-content {
+        padding: 0 50px;
+        gap: 50px;
+    }
+
+    .welfare-content-item {
+        min-width: 300px;
     }
 }

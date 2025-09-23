@@ -157,6 +157,7 @@
         width: 100%;
         max-width: 300px;
         height: auto;
+        margin: 0 auto;
     }
 }
 
@@ -248,8 +249,12 @@
         padding: 5px 10px;
     }
 
-    .working-style-data-item-content p {
-        font-size: 1.2rem;
+    .working-style-data-item-content {
+        flex-direction: row;
+    }
+
+    .voice-modal-open-button {
+        width: 100%;
     }
 
 }

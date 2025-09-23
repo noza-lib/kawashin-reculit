@@ -246,9 +246,9 @@ section {
 }
 
 .message-container {
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     left: 0;
     /* margin: 50px auto; */
     background-image: url(../image/mainvisual1.jpg);
@@ -367,18 +367,18 @@ img {
         width: 100%;
     }
 
-    .message-container {
+    /* .message-container {
         margin-top: 80px;
         height: calc(100vh - 80px);
-    }
+    } */
 }
 
 /* スマホ対応 (480px以下) */
 @media screen and (max-width: 480px) {
 
-    body {
+    /* body {
         font-size: 0.9rem;
-    }
+    } */
 
     h1 {
         font-size: 3rem;
