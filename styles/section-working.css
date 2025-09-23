@@ -1,8 +1,15 @@
-.working-style-content {
+#working-style {
+    margin: 0 calc(50% - 50vw);
+    padding: 90px calc(50vw - 50%);
+    /* background-color: #e0edff; */
+    background: linear-gradient(180deg, #e0edff 0%, #ffffff 100%);
+}
+
+/* .working-style-content {
     margin: 0 calc(50% - 50vw);
     padding: 2rem calc(50vw - 50%);
     background-color: #e0edff;
-}
+} */
 
 .working-style-voice {
     display: flex;
