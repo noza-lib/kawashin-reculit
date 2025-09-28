@@ -220,6 +220,29 @@
     display: flex;
 }
 
+.working-style-voice-item-text {
+    margin: 20px 0;
+
+    & p {
+        font-weight: bold;
+        line-height: 1.75;
+    }
+}
+
+.voice-item-img {
+    & img {
+        border-radius: 50%;
+    }
+}
+
+.voice-title {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    /* color: #217AC5; */
+    /* margin: 0;
+    padding: 0; */
+}
+
 
 
 

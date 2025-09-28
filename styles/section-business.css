@@ -51,7 +51,8 @@
 }
 
 .welfare-content-item {
-    background-color: #e0edff;
+    /* background-color: #e0edff; */
+    background: linear-gradient(180deg, #e0edff 0%, #ffffff 100%);
     min-width: 500px;
     padding: 2rem;
     scroll-snap-align: center;
@@ -62,6 +63,13 @@
     }
 }
 
+
+@media screen and (max-width: 1024px) {
+    .welfare-content {
+        padding: 0 200px;
+        /* gap: 50px; */
+    }
+}
 
 @media screen and (max-width: 768px) {
 

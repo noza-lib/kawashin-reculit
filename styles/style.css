@@ -252,6 +252,7 @@ section {
     left: 0;
     /* margin: 50px auto; */
     background-image: url(../image/mainvisual1.jpg);
+    /* background-image: url(../image/mainvisual2.png); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
