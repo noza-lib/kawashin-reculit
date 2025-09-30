@@ -10,6 +10,7 @@ body {
 }
 
 h1 {
+    color: #fff;
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1em;
@@ -251,12 +252,12 @@ section {
     height: calc(100vh - 80px);
     left: 0;
     /* margin: 50px auto; */
-    background-image: url(../image/mainvisual1.jpg);
-    /* background-image: url(../image/mainvisual2.png); */
+    /* background-image: url(../image/mainvisual1.jpg); */
+    background-image: url(../image/mainvisual2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     background-blend-mode: overlay;
 }
 
@@ -340,6 +341,10 @@ img {
     /* h3 {
         font-size: 1.3rem;
     } */
+
+    .message-container {
+        background-image: url(../image/mainvisualSP.png);
+    }
 
     .content {
         padding: 0 1rem;
