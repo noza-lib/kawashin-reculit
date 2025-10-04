@@ -9,6 +9,7 @@
         max-width: 800px;
         min-width: 500px;
         margin-left: -2rem;
+        border-radius: 15px;
     }
 
     & .business-content-item-text {
@@ -27,6 +28,7 @@
         max-width: 800px;
         min-width: 500px;
         margin-right: -2rem;
+        border-radius: 15px;
     }
 
     & .business-content-item-text {
@@ -51,16 +53,28 @@
 }
 
 .welfare-content-item {
-    /* background-color: #e0edff; */
-    background: linear-gradient(180deg, #e0edff 0%, #ffffff 100%);
+    background-color: #e0edff;
+    /* background: linear-gradient(180deg, #ffffff 0%, #e0edff 100%); */
     min-width: 500px;
-    padding: 2rem;
+    padding: 0;
     scroll-snap-align: center;
+    border-radius: 15px;
 
     & img {
-        margin-bottom: 1rem;
+        /* margin-bottom: 1rem; */
         width: 100%;
+        border-radius: 15px 15px 0 0;
     }
+}
+
+.welfare-content-item-text {
+    padding: 1rem;
+}
+
+.welfare-content-item-text h4 {
+    font-size: 1.5rem;
+    color: #217AC5;
+    margin-bottom: 1rem;
 }
 
 
@@ -102,12 +116,20 @@
 
     .business-content-item-left,
     .business-content-item-right {
-        margin-bottom: 1.5em;
+        margin-bottom: 50px;
+
+        & h3 {
+            margin: 10px 0;
+        }
     }
 
     .welfare-content {
         padding: 0 50px;
-        gap: 50px;
+        gap: 15px;
+    }
+
+    .welfare-content-message {
+        font-size: 1.5rem;
     }
 
     .welfare-content-item {

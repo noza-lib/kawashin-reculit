@@ -158,7 +158,8 @@
     gap: 1em;
     background-color: #ffffff;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: 1px solid #217AC5;
 
     & img {
         width: 100%;
@@ -221,11 +222,12 @@
 }
 
 .working-style-voice-item-text {
-    margin: 20px 0;
+    /* margin: 20px 0; */
 
     & p {
         font-weight: bold;
         line-height: 1.75;
+        text-align: center;
     }
 }
 
@@ -285,6 +287,12 @@
 
     .voice-modal-open-button {
         width: 100%;
+    }
+
+    .working-style-voice-item-text {
+        & p {
+            font-size: 1.25rem;
+        }
     }
 
 }
