@@ -12,6 +12,10 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+.big {
+    font-size: 2rem;
+}
+
 .button-blue {
     background-color: #217AC5;
     color: white;
@@ -45,13 +49,14 @@
 /* 地域活動用ボタン */
 .button-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: center;
 
     & a {
         width: 15em;
+        margin: 0 auto;
     }
 
     & p {
