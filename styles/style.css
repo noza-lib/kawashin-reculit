@@ -244,23 +244,23 @@ section {
 }
 
 .src1 {
-    background-image: url(../image/TOP01.JPG);
+    background-image: url(../image/TOP01.jpg);
 }
 
 .src2 {
-    background-image: url(../image/TOP02.JPG);
+    background-image: url(../image/TOP02.jpg);
 }
 
 .src3 {
-    background-image: url(../image/TOP03.JPG);
+    background-image: url(../image/TOP03.jpg);
 }
 
 .src4 {
-    background-image: url(../image/TOP04.JPG);
+    background-image: url(../image/TOP04.jpg);
 }
 
 .src5 {
-    background-image: url(../image/TOP05.JPG);
+    background-image: url(../image/TOP05.jpg);
 }
 
 @keyframes image-switch-animation {
