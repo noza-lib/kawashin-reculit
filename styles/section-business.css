@@ -91,7 +91,7 @@
     .business-content-item-right {
         flex-direction: column;
         gap: 1em;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .business-content-item-left img,
