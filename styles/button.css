@@ -124,6 +124,10 @@
         }
     }
 
+    .big {
+        font-size: 1.5rem;
+    }
+
     /* トップに戻るボタン */
     #to-top-button {
         bottom: 15px;
