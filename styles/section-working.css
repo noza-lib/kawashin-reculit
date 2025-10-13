@@ -159,7 +159,8 @@
     background-color: #ffffff;
     cursor: pointer;
     border-radius: 15px;
-    border: 1px solid #217AC5;
+    /* border: 1px solid #217AC5; */
+    box-shadow: 10px 5px 5px gray;
 
     & img {
         width: 100%;
@@ -227,7 +228,7 @@
     & p {
         font-weight: bold;
         line-height: 1.75;
-        text-align: center;
+        /* text-align: center; */
     }
 }
 

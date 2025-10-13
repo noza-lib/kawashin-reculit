@@ -49,6 +49,39 @@ nav a {
     }
 }
 
+.header-logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-logo-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo-company {
+    font-size: 2rem;
+}
+
+.header-logo-text-small {
+    font-size: 1rem;
+}
+
+.header-logo-message {
+    color: #217AC5;
+    margin-top: -10px;
+}
+
+.header-logo-recruit {
+    color: #217AC5;
+    margin-left: 1rem;
+}
+
+
+
 .header-nav-container {
     display: flex;
     flex-direction: row;
@@ -89,8 +122,12 @@ nav a {
         justify-content: center;
     }
 
-    .header-logo-container {
-        font-size: 0.75rem;
+    .header-logo-company {
+        font-size: 1.75rem;
+    }
+
+    .header-logo-text-small {
+        font-size: 0.9rem;
     }
 
     .header-nav-container {
