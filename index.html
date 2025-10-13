@@ -43,10 +43,11 @@
                     <!-- <img src="image/img_logo.png" alt="豊川信用金庫ロゴ"> -->
                     <div class="header-logo-text-container">
                         <p class="header-logo-company">豊川信用金庫</p>
-                        <p class="header-logo-message">街<span class="header-logo-text-small">と</span>共<span
+                        <!-- <p class="header-logo-message">街<span class="header-logo-text-small">と</span>共<span
                                 class="header-logo-text-small">に</span>未来<span
                                 class="header-logo-text-small">を</span>描<span class="header-logo-text-small">く</span>
-                        </p>
+                        </p> -->
+                        <p class="header-logo-message">街と共に未来を描く</p>
                     </div>
                     <p class="header-logo-recruit">Recruit</p>
                 </a>
@@ -199,7 +200,7 @@
                 </div>
                 <div class="working-style-voice">
 
-                    <label for="voice1-modalToggle" class="voice-modal-open-button fadein">
+                    <a href="/interveiw01.html" class="voice-modal-open-button fadein">
                         <div class="working-style-voice-item-text">
                             <p>誰とでも気軽に話せる雰囲気づくりを大切にしています。</p>
                         </div>
@@ -207,34 +208,7 @@
                             <img src="image/WV_takeda01.jpg" alt="先輩社員の声1-1">
                             <p class="working-style-voice-item-name">岡崎支店 支店長　竹田さん</p>
                         </div>
-                    </label>
-                    <input type="checkbox" id="voice1-modalToggle" class="voice-modal-checkbox">
-                    <div class="voice-modal" id="voice1-modal">
-                        <div class="voice-modal-wrapper">
-                            <label for="voice1-modalToggle" class="voice-close">&times;</label>
-                            <div class="voice-modal-content">
-                                <p class="voice-title">岡崎支店 支店長　竹田さん</p>
-                                <p class="voice-title">自身のキャリア、支店長としての思いをお願いします。</p>
-                                <p>
-                                    はじめまして。岡崎支店支店長、竹田絢です。
-                                    2004年に入庫し、渉外担当として地域のお客様と信頼関係を築くことからキャリアをスタートしました。その後、課長・次長を経て,
-                                    2021年に支店長を拝命しました。まだまだ若輩者ではありますが、周囲の支えとご縁に恵まれ、貴重な経験を積ませていただいています。
-                                    支店長という立場ではありますが、堅苦しくなく、誰とでも気軽に話せる雰囲気づくりを大切にしています。職員一人ひとりの声に耳を傾け、チームで成長していける職場を目指しています。
-
-                                </p>
-                                <img src="image/WV_takeda01.jpg" alt="先輩社員の声1-1">
-                                <p class="voice-title">プライベートを少しだけ教えてください。</p>
-                                <p>
-                                    お城巡りやラーメンの食べ歩きが趣味で、休日には夫婦で歴史のある街を歩いたり、地元の味を楽しんだりするのが何よりのリフレッシュです。またそうした時間が、地域の魅力を再発見するきっかけにもなって、仕事にも役立っています。
-                                    私たちの信用金庫は、地域と人を大切にする職場です。年齢や経験に関係なく、やる気と誠実さがあれば、しつかりと評価される環境があります。
-                                    私自身もその一例として、これから入庫される皆さんに希望を持ってもらえたら嬉しいです。皆さんと一緒に働ける日を、心から楽しみにしています。
-
-                                </p>
-                                <img src="image/WV_takeda02.jpg" alt="先輩社員の声1-2">
-
-                            </div>
-                        </div>
-                    </div>
+                    </a>
 
                     <label for="voice2-modalToggle" class="voice-modal-open-button fadein">
                         <div class="working-style-voice-item-text">
@@ -920,7 +894,7 @@
 
         <section class="section">
             <div class="button-container fadein">
-                <p class="button-content-message">まちと一緒に未来を描こう！</p>
+                <p class="button-content-message">街と共に未来を描こう！</p>
                 <a href="https://job.mynavi.jp/27/pc/corp95927/list.html" class="button-blue big" target="_blank"
                     rel="noopener noreferrer">
                     <p>ENTRY</p>
@@ -937,9 +911,6 @@
                 <p class="contact-tel">0120-09-2317</p>
                 <p>担当：人事部（渡辺、大西）</p>
             </div>
-            <!-- <a href="https://form.run/@souma-nozawa-lib-aVhg6C6Q6B9zi1kmvmnR" class="button-blue" target="_blank" rel="noopener noreferrer">
-                <p>お問い合わせ</p>
-            </a> -->
         </section>
     </div>
 
@@ -951,62 +922,10 @@
         </div>
     </footer>
     <!-- トップに戻るボタンを追加 -->
-    <!-- <button id="to-top-button" aria-label="トップに戻る">↑</button> -->
+    <button id="to-top-button" aria-label="トップに戻る">↑</button>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $(".drawer_toggle").click(function () {
-                $(this).toggleClass("open");
-                $(".header-nav").toggleClass("sp_open");
-            });
-            $(".header-nav a").click(function () {
-                $(".drawer_toggle").removeClass("open");
-                $(".header-nav").removeClass("sp_open");
-            });
-        });
-        // $(window).on("load", function (){
-        //     $('.load-fadein').each(function(){
-        //         var elemPos = $(this).offset().top,
-        //         scroll = $(window).scrollTop(),
-        //         windowHeight = $(window).height();
-
-        //         if (scroll > elemPos - windowHeight + 150){
-        //             $(this).addClass('scrollin');
-        //         }
-        //     });
-        // });
-        // $(window).on("load", function (){
-        //     $('.load-fadein').each(function(){
-        //         $(this).addClass('scrollin');
-        //     });
-        // });
-        $(window).on("load", function () {
-            $('.load-fadein').each(function () {
-                $(this).addClass('scrollin');
-            });
-            setTimeout(function () {
-                $('.load-delay-fadein').each(function () {
-                    $(this).addClass('scrollin');
-                });
-            }, 1000);
-        });
-        $(window).scroll(function () {
-            $('.fadein').each(function () {
-                var elemPos = $(this).offset().top,
-                    scroll = $(window).scrollTop(),
-                    windowHeight = $(window).height();
-
-                if (scroll > elemPos - windowHeight + 150) {
-                    $(this).addClass('scrollin');
-                }
-            });
-        });
-        $('.accordion-header').click(function () {
-            $(this).next().slideToggle();
-            $(this).toggleClass('active');
-        });
-    </script>
+    <script src="js/fadein.js"></script>
     <script src="js/scroll.js"></script>
 </body>
 

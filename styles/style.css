@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "HonokaMaruGothic";
+    src: url("../fonts/font_1_honokamarugo_1.1.ttf") format("truetype");
+}
+
 body {
     /* font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; */
-    font-family: "Noto Sans JP", Meiryo, sans-serif;
+    /* font-family: "Noto Sans JP", Meiryo, sans-serif; */
     /* font-family: "Zen Maru Gothic", Meiryo, sans-serif; */
+    font-family: "HonokaMaruGothic", Meiryo, sans-serif;
     margin: 0 auto;
     padding: 0;
     color: #333;

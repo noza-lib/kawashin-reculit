@@ -158,6 +158,8 @@
     gap: 1em;
     background-color: #ffffff;
     cursor: pointer;
+    text-decoration: none;
+    color: #000000;
     border-radius: 15px;
     /* border: 1px solid #217AC5; */
     box-shadow: 10px 5px 5px gray;
@@ -202,6 +204,11 @@
     overflow: scroll;
     background-color: #FEFEFE;
     border-radius: 5px;
+}
+
+.interview-content {
+    padding: 0 0.5rem;
+    margin-top: 80px;
 }
 
 .voice-modal-content {
