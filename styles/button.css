@@ -133,7 +133,12 @@
     } */
 
     .big {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        letter-spacing: -0.1rem;
+        /* font-weight: bold; */
+        /* text-decoration: underline; */
+        /* color: #217AC5; */
+        /* color: #D32F2F; */
     }
 
     .button-content-message {
