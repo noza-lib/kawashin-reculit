@@ -3,11 +3,15 @@
     src: url("../fonts/font_1_honokamarugo_1.1.ttf") format("truetype");
 }
 
+.honoka {
+    font-family: "HonokaMaruGothic", Meiryo, sans-serif;
+}
+
 body {
     /* font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; */
     /* font-family: "Noto Sans JP", Meiryo, sans-serif; */
-    /* font-family: "Zen Maru Gothic", Meiryo, sans-serif; */
-    font-family: "HonokaMaruGothic", Meiryo, sans-serif;
+    font-family: "Zen Maru Gothic", Meiryo, sans-serif;
+    /* font-family: "HonokaMaruGothic", Meiryo, sans-serif; */
     margin: 0 auto;
     padding: 0;
     color: #333;
@@ -139,6 +143,7 @@ section {
 }
 
 .section-title6 {
+    font-family: "HonokaMaruGothic", Meiryo, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,17 +221,24 @@ section {
 .message-text-top,
 .message-text-bottom {
     display: block;
+    color: #525252;
     margin: 3vw 0;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.message-text-bottom {
+    margin-bottom: 500px;
 }
 
 .container {
-    width: 50vw;
-    aspect-ratio: 2 / 1;
-    position: relative;
-    margin: 0 auto;
+    width: 100vw;
+    /* aspect-ratio: 2 / 1; */
+    /* position: relative; */
+    /* margin: 0 auto; */
 }
 
-.container::after {
+/* .container::after {
     position: absolute;
     content: '';
     top: 0;
@@ -234,39 +246,39 @@ section {
     left: 0;
     right: 0;
     box-shadow: inset 0 0 10px 15px white;
-}
+} */
 
-.image {
+/* .image {
     position: absolute;
-    top: 0;
-    left: 1px;
+    top: 80px;
+    left: 0;
     bottom: 0;
     right: 0;
     opacity: 0;
     background-size: cover;
     background-position: center center;
 
-    animation: image-switch-animation 25s infinite;
+    animation: image-switch-animation 15s infinite;
 }
 
 .src1 {
-    background-image: url(../image/TOP01.jpg);
+    background-image: url(../image/mainvisual1.jpg);
 }
 
 .src2 {
-    background-image: url(../image/TOP02.jpg);
+    background-image: url(../image/mainvisual2.jpg);
 }
 
 .src3 {
-    background-image: url(../image/TOP03.jpg);
+    background-image: url(../image/mainvisual3.jpg);
 }
 
 .src4 {
-    background-image: url(../image/TOP04.jpg);
+    background-image: url(../image/mainvisual4.jpg);
 }
 
 .src5 {
-    background-image: url(../image/TOP05.jpg);
+    background-image: url(../image/mainvisual5.jpg);
 }
 
 @keyframes image-switch-animation {
@@ -309,6 +321,65 @@ section {
 
 .image:nth-of-type(5) {
     animation-delay: 20s;
+} */
+
+.image {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-size: cover;
+    background-position: center center;
+
+    animation: image-switch-animation 9s infinite;
+}
+
+.src1 {
+    background-image: url(../image/mainvisual1.jpg);
+}
+
+.src2 {
+    background-image: url(../image/mainvisual2.jpg);
+}
+
+.src3 {
+    background-image: url(../image/mainvisual3.jpg);
+}
+
+@keyframes image-switch-animation {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.image:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.image:nth-of-type(2) {
+    animation-delay: 3s;
+}
+
+.image:nth-of-type(3) {
+    animation-delay: 6s;
 }
 
 
@@ -585,6 +656,18 @@ img {
         text-align: left;
     }
 
+    .src1 {
+        background-image: url(../image/mainvisualSP1.jpg);
+    }
+
+    .src2 {
+        background-image: url(../image/mainvisualSP2.jpg);
+    }
+
+    .src3 {
+        background-image: url(../image/mainvisualSP3.jpg);
+    }
+
     .message-container {
         background-image: url(../image/mainvisualSP2.png);
         height: calc(100vh - 80px);
@@ -598,12 +681,12 @@ img {
     }
 
     .message-text-top {
-        text-align: left;
-        margin-bottom: 50px;
+        text-align: center;
+        /* margin-bottom: 5px; */
     }
 
     .message-text-bottom {
-        text-align: right;
+        text-align: center;
         margin-bottom: 50px;
     }
 
