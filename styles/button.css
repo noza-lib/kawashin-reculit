@@ -8,7 +8,9 @@
     border: 2px solid;
     border-radius: 100px;
     text-decoration: none;
-    font-weight: bold;
+    letter-spacing: 0.1em;
+    /* font-weight: bold; */
+
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -135,6 +137,7 @@
     .big {
         font-size: 1.5rem;
         letter-spacing: -0.1rem;
+        margin: 0 -0.5rem;
         /* font-weight: bold; */
         /* text-decoration: underline; */
         /* color: #217AC5; */

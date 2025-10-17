@@ -6,7 +6,7 @@
   background: linear-gradient(85deg, #217AC5 0%, #0094CF 100%);
   color: #FFF;
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   border-radius: 10px 10px 0 0;
   padding: 12px 45px 10px 45px;
   margin: 20px 0 0;
@@ -59,6 +59,28 @@
 /* スマホ対応 (480px以下) */
 @media screen and (max-width: 480px) {
   .accordion-header {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 12px 30px 10px 35px;
+  }
+
+  .accordion-content {
+    padding: 12px 20px 10px 35px;
+  }
+
+  .qa-text {
+    margin-left: -1.2em;
+  }
+
+  .accordion-header::before,
+  .accordion-header::after {
+    position: absolute;
+    content: '';
+    top: 1px;
+    right: 15px;
+    bottom: 0;
+    width: 16px;
+    height: 2px;
+    margin: auto;
+    background: #FFF;
   }
 }

@@ -80,6 +80,7 @@
 } */
 
 .working-style-voice-item-name {
+    font-size: 1rem;
     text-align: right;
     margin-top: 1em;
 }

@@ -17,6 +17,12 @@
     width: 50%;
 }
 
+.business-description-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5em;
+}
+
 .business-content-item-right {
     display: flex;
     flex-direction: row;
