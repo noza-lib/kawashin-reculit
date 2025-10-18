@@ -368,7 +368,7 @@ section {
     background-size: cover;
     background-position: center center;
 
-    animation: image-switch-animation 9s infinite;
+    animation: image-switch-animation 12s infinite;
 }
 
 .src1 {
@@ -392,11 +392,11 @@ section {
         opacity: 1;
     }
 
-    30% {
+    35% {
         opacity: 1;
     }
 
-    35% {
+    40% {
         opacity: 0;
     }
 
@@ -410,11 +410,11 @@ section {
 }
 
 .image:nth-of-type(2) {
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 .image:nth-of-type(3) {
-    animation-delay: 6s;
+    animation-delay: 8s;
 }
 
 
