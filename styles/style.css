@@ -164,6 +164,28 @@ section {
     }
 }
 
+.page-title6 {
+    font-family: "HonokaMaruGothic", Meiryo, sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 2rem;
+    color: #217AC5;
+
+    & h2 {
+        font-size: 3.75rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    & p {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
 .title-red {
     color: #D32F2F;
 }
@@ -652,6 +674,10 @@ img {
 
     body {
         font-size: 0.8rem;
+    }
+
+    section {
+        padding: 50px 0;
     }
 
     h1 {

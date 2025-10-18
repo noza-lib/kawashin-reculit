@@ -254,7 +254,22 @@
     padding: 0; */
 }
 
+.voice-message-container {
+    margin-top: 100px;
 
+    & h1 {
+        color: #217AC5;
+        text-align: left;
+    }
+}
+
+.voice-message-item {
+    height: 200px;
+}
+
+.voice-message-item-name {
+    text-align: right;
+}
 
 
 @media screen and (max-width: 768px) {
