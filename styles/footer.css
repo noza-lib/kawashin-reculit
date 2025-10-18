@@ -1,4 +1,4 @@
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,19 +9,24 @@
     gap: 1em;
 }
 
-.footer-info{
+.footer-info {
     font-size: 1rem;
     text-align: left;
 }
 
-.footer-info-title{
+.footer-info-title {
     font-size: 1.5rem;
 }
 
-.footer-copyright{
+.footer-copyright {
     font-size: 1rem;
     font-weight: 600;
 }
+
+.footer-button-container {
+    display: none;
+}
+
 
 @media screen and (max-width: 768px) {
     .footer-container {
@@ -34,6 +39,7 @@
 @media screen and (max-width: 480px) {
     .footer-container {
         padding: 15px 0.5rem;
+        margin-bottom: 50px;
     }
 
     .footer-info-title {
@@ -43,5 +49,38 @@
     .footer-info,
     .footer-copyright {
         font-size: 0.7rem;
+    }
+
+    .footer-button-container {
+        display: block;
+        background-color: #217AC5;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 1000;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+
+        & a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.75rem;
+            letter-spacing: 0.1em;
+        }
+
+        & p::before {
+            content: '\f304';
+            font-family: "Font Awesome 6 Free";
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: white;
+            margin-right: 0.5em;
+        }
     }
 }
