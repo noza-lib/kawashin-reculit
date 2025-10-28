@@ -721,13 +721,11 @@ img {
 
     .message-text-top {
         letter-spacing: 0.2rem;
-        text-align: center;
         margin-bottom: -10px;
         /* margin-bottom: 5px; */
     }
 
     .message-text-bottom {
-        text-align: center;
         letter-spacing: 0.3rem;
         margin-bottom: 100px;
     }

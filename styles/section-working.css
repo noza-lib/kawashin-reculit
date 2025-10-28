@@ -79,12 +79,6 @@
     text-align: center;
 } */
 
-.working-style-voice-item-name {
-    font-size: 1rem;
-    text-align: right;
-    margin-top: 1em;
-}
-
 .working-style-data-item {
     display: flex;
     flex-direction: row;
@@ -144,6 +138,19 @@
     transform: translateY(-35%);
 }
 
+.voice-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.click-image {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    /* margin: 0 auto; */
+}
 
 .voice-modal-checkbox {
     display: none;
@@ -267,9 +274,29 @@
     height: 200px;
 }
 
-.voice-message-item-name {
-    font-size: 1.5rem;
-    text-align: right;
+.voice-item-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.working-style-voice-item-name {
+    font-size: 1.25rem;
+}
+
+.working-style-voice-item-name-sub {
+    font-size: 1rem;
+}
+
+.working-style-voice-item-name-sub::after {
+    content: '\f061';
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 0.5em;
 }
 
 .interview-container {
@@ -341,7 +368,11 @@
         }
     }
 
-    .voice-message-item-name {
+    .working-style-voice-item-name {
+        font-size: 1rem;
+    }
+
+    .working-style-voice-item-name-sub {
         font-size: 1rem;
     }
 

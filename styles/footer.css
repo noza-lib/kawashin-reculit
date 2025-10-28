@@ -62,6 +62,14 @@
         z-index: 1000;
         box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 
+        & .footer-button-container-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            flex-direction: row;
+        }
+
         & a {
             display: block;
             width: 100%;
@@ -74,13 +82,17 @@
             letter-spacing: 0.1em;
         }
 
-        & p::before {
+        & img {
+            height: 30px;
+        }
+
+        /* & p::before {
             content: '\f304';
             font-family: "Font Awesome 6 Free";
             font-weight: bold;
             font-size: 1.5rem;
             color: white;
             margin-right: 0.5em;
-        }
+        } */
     }
 }
