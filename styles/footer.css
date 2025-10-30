@@ -83,7 +83,11 @@
         }
 
         & img {
-            height: 30px;
+            height: 25px;
+        }
+
+        & p {
+            font-weight: bold;
         }
 
         /* & p::before {
