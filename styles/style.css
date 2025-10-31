@@ -269,94 +269,13 @@ section {
     margin: 0 -0.4em;
 }
 
+.text-blue {
+    color: #217AC5;
+}
+
 .closer {
     letter-spacing: -0.1em;
 }
-
-/* .container::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    box-shadow: inset 0 0 10px 15px white;
-} */
-
-/* .image {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    background-size: cover;
-    background-position: center center;
-
-    animation: image-switch-animation 15s infinite;
-}
-
-.src1 {
-    background-image: url(../image/mainvisual1.jpg);
-}
-
-.src2 {
-    background-image: url(../image/mainvisual2.jpg);
-}
-
-.src3 {
-    background-image: url(../image/mainvisual3.jpg);
-}
-
-.src4 {
-    background-image: url(../image/mainvisual4.jpg);
-}
-
-.src5 {
-    background-image: url(../image/mainvisual5.jpg);
-}
-
-@keyframes image-switch-animation {
-    0% {
-        opacity: 0;
-    }
-
-    5% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 1;
-    }
-
-    30% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.image:nth-of-type(1) {
-    animation-delay: 0s;
-}
-
-.image:nth-of-type(2) {
-    animation-delay: 5s;
-}
-
-.image:nth-of-type(3) {
-    animation-delay: 10s;
-}
-
-.image:nth-of-type(4) {
-    animation-delay: 15s;
-}
-
-.image:nth-of-type(5) {
-    animation-delay: 20s;
-} */
 
 .image {
     position: absolute;
@@ -538,7 +457,7 @@ section {
     left: 0;
     /* margin: 50px auto; */
     /* background-image: url(../image/mainvisual1.jpg); */
-    background-image: url(../image/mainvisual3.png);
+    /* background-image: url(../image/mainvisual3.png); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -708,8 +627,12 @@ img {
     }
 
     .message-container {
-        background-image: url(../image/mainvisualSP2.png);
-        height: calc(100vh - 80px);
+        /* background-image: url(../image/mainvisualSP2.png); */
+        height: calc(100vh - 80px - 50px);
+    }
+
+    .image {
+        bottom: 50px;
     }
 
     .message-text-container {
