@@ -7,6 +7,10 @@
     font-family: "HonokaMaruGothic", Meiryo, sans-serif;
 }
 
+.kaku {
+    font-family: "Noto Sans JP", Meiryo, sans-serif;
+}
+
 body {
     /* font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif; */
     /* font-family: "Noto Sans JP", Meiryo, sans-serif; */
@@ -646,11 +650,15 @@ img {
         letter-spacing: 0.2rem;
         margin-bottom: -10px;
         /* margin-bottom: 5px; */
+        position: relative;
+        left: -24px;
     }
 
     .message-text-bottom {
         letter-spacing: 0.3rem;
         margin-bottom: 100px;
+        position: relative;
+        left: 24px;
     }
 
     .vision-content-message {
