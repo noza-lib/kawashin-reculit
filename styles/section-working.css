@@ -326,7 +326,13 @@
     height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .voice-modal-open-button {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 820px) {
     .working-style-voice-item {
         flex-direction: column;
         text-align: center;

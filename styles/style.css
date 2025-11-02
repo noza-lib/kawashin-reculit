@@ -257,8 +257,15 @@ section {
     font-weight: bold;
 }
 
+.message-text-top {
+    position: relative;
+    left: -24px;
+}
+
 .message-text-bottom {
     margin-bottom: 500px;
+    position: relative;
+    left: 24px;
 }
 
 .container {
@@ -283,7 +290,7 @@ section {
 
 .image {
     position: absolute;
-    top: 80px;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -455,6 +462,7 @@ section {
 }
 
 .message-container {
+    position: relative;
     margin-top: 80px;
     width: 100vw;
     height: calc(100vh - 80px);
@@ -538,13 +546,22 @@ img {
         aspect-ratio: 16 / 9;
     }
 
+    .message-text-top {
+        font-size: 3rem;
+    }
+
+    .message-text-bottom {
+        font-size: 3rem;
+        margin-bottom: 350px;
+    }
+
     h1 {
         margin-bottom: 0;
     }
 }
 
 /* タブレット対応 (768px以下) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 
     body {
         font-size: 1rem;
@@ -561,6 +578,10 @@ img {
     /* h3 {
         font-size: 1.3rem;
     } */
+
+    .message-text-bottom {
+        margin-bottom: 250px;
+    }
 
 
     .content {
@@ -635,10 +656,6 @@ img {
         height: calc(100vh - 80px - 50px);
     }
 
-    .image {
-        bottom: 50px;
-    }
-
     .message-text-container {
         display: flex;
         flex-direction: column;
@@ -650,15 +667,11 @@ img {
         letter-spacing: 0.2rem;
         margin-bottom: -10px;
         /* margin-bottom: 5px; */
-        position: relative;
-        left: -24px;
     }
 
     .message-text-bottom {
         letter-spacing: 0.3rem;
         margin-bottom: 100px;
-        position: relative;
-        left: 24px;
     }
 
     .vision-content-message {
