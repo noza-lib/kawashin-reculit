@@ -54,6 +54,14 @@
     border-radius: 0 0 15px 0;
 }
 
+.bank-overview-year {
+    margin-top: 1rem;
+
+    & p {
+        text-align: right;
+    }
+}
+
 
 
 @media screen and (max-width: 768px) {}
