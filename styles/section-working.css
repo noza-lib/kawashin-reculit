@@ -372,6 +372,10 @@
         gap: 0.5em;
     }
 
+    .recruitment-year {
+        margin-top: -24px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -398,6 +402,10 @@
         width: 300px;
         height: 300px;
         margin: -1rem auto 1rem auto;
+    }
+
+    .recruitment-year {
+        margin-top: -20px;
     }
 
 }
